@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>System Of A Down - Contacto</title>
+</head>
+<body>
+    <!-- Inicio Header -->
+    <header class="header">
+
+        <!-- Logo -->
+        <div class="header__logo">
+            <a href="./index.html">
+                <img src="./img/logo_soad.png" alt="logo">
+            </a>
+        </div>
+        <!-- Logo -->
+
+        <!-- Menu de navegacion -->
+        <nav class="header__nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./integrantes.html">Integrantes</a></li>
+                <li><a href="./discografia.html">Discografia</a></li>
+                <li><a href="./shows.html">Shows</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Menu de navegacion -->
+
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Comienzo Contenido -->
+    <main>
+        <section class="mainSectionContacto">
+            <h1>Suscripcion</h1>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="ingresa tu apellido" required>
+
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad" placeholder="ingresa tu edad" required>
+
+                <label for="email">eMail</label>
+                <input type="email" name="email" id="email" placeholder="ingresa tu email" required>
+
+                <br>
+
+                <label for="novedades">Te gustaria recibir novedades de la banda?</label>
+                <input type="radio" name="novedades"> Si
+                <input type="radio" name="novedades"> No
+
+                <br>
+                <p>Tus discos favoritos?</p>
+                <input type="checkbox" name="system"> System of a Down
+                <input type="checkbox" name="toxicity"> Toxicity
+                <input type="checkbox" name="mezmerize"> Mezmerize
+                <input type="checkbox" name="hypnotize"> Hypnotize
+
+                <br>
+                <label for="pais">De que pais eres?</label>
+                <select name="pais" id="pais">
+                    <option value="">Seleccionar</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Mexico">Mexico</option>
+                </select>
+
+                <br>
+
+                <input type="button" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <!-- Fin Contenido -->
+
+    <!-- Inicio Footer -->
+    <footer class="footer">
+        <!-- Menu footer -->
+        <nav class="header__nav--footer">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./integrantes.html">Integrantes</a></li>
+                <li><a href="./discografia.html">Discografia</a></li>
+                <li><a href="./shows.html">Shows</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Redes Sociales -->
+        <div class="rrss">
+            <h1>Redes Sociales</h1>
+        </div>
+
+        <!-- Suscripcion novedades -->
+        <div class="suscripcion">
+            <p>Quiero recibir novedades</p>
+            <form action="#">
+                <input type="email" name="email" id="email" placeholder="ingresa tu email">
+
+                <input type="button" value="Enviar">
+            </form>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+</body>
+</html>

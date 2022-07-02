@@ -1,0 +1,341 @@
+/*
+    Tipografias y Colores pensados
+    ******************************************
+    Tipografias: Montserrat - Zilla Slab
+    Color de fondo: #090922
+    Color de detalles: #DDFE81
+*/
+
+/* Estilos globales */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #090922;
+}
+
+h1{
+    font-family: 'Zilla Slab', serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#body__home{
+    background-image: url(../img/fondo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.contenedor_home{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 60vh auto;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+    ;
+}
+/* *********************************************************** */
+
+/* Header */
+header{
+    grid-area: header;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.header__logo a img{
+    width: 40%;
+    border: 4px solid white;
+}
+
+.header__nav{
+    padding-right: 20px;
+    width: 50%;
+}
+
+.header__nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav ul li{
+    border: 2px solid white;
+    padding: 5px 8px;
+}
+
+.header__nav ul li a{
+    font-family: 'Zilla Slab', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+}
+/* ************************************************* */
+
+/*************** Main *****************/
+main{
+    grid-area: main;
+}
+
+.mainSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shows__fecha{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #090922;
+    padding: 10px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.shows__fecha p{
+    font-family: Montserrat, sans-serif;
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    background-color: #090922;
+}
+
+.shows__fecha p.estadio{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #ddfe81;
+    font-size: 1.1rem;
+}
+
+.btn{
+    background-color: #ddfe81;
+    color: #090922;
+    padding: 5px;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.video iframe{
+    border: 3px solid #ddfe81;
+    padding: 5px;
+}
+/* *************************************************** */
+
+/*********** Footer ************/
+footer{
+    grid-area: footer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header__nav--footer{
+    width: 35%;
+    margin-bottom: 10px;
+}
+
+.header__nav--footer ul{
+    display: flex;
+    list-style-type: armenian;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav--footer li::marker{
+    color: #ddfe81;
+    padding-right: 0;
+}
+
+.header__nav--footer ul li a{
+    font-family: 'Zilla Slab', serif;
+    font-size: .9rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.suscripcion{
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+.suscripcion p{
+    margin-bottom: 5px;
+    font-family: 'Zilla Slab', serif;
+    color: white;
+    font-size: 1.1rem;
+}
+.suscripcion form{
+    display: flex;
+}
+
+.suscripcion input[type="email"]{
+    background-color: #ddfe81;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Zilla Slab', serif;
+}
+
+.suscripcion input[type="button"]{
+    border: none;
+    padding: 10px 15px;
+    background-color: #090922;
+    font-family: 'Zilla Slab', serif;
+    color: #ddfe81;
+    font-size: 1.1rem;
+}
+/* ********************************************** */
+
+/* Estilos de paginas internas */
+
+.mainSection,
+.mainSectionDiscografia,
+.mainSectionShows,
+.mainSectionContacto,
+.mainSectionIntegrantes,
+.mainSectionMultimedia{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mainSectionMultimedia{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer.footer_media{
+    position: absolute;
+    bottom: -120%;
+    width: 100%;
+}
+
+.container_media{
+    display: grid;
+    grid-template-areas:
+        "iframe1 iframe1 imagen3 imagen4"
+        "iframe1 iframe1 imagen7 imagen8"
+        "imagen9 imagen10 imagen11 imagen12"
+        "imagen13 imagen14 iframe2 iframe2"
+        "imagen17 imagen18 iframe2 iframe2"
+        "imagen21 imagen22 imagen23 imagen24"
+    ;
+    grid-template-rows: auto auto 23% auto auto 23%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.container_media .imagen{
+    border: 1px solid #ddfe81;
+    color: #ddfe81;
+    text-align: center;
+}
+.imagen-1{
+    grid-area: imagen1;
+}
+.imagen-2{
+    grid-area: imagen2;
+}
+.imagen-3{
+    grid-area: imagen3;
+}
+.imagen-4{
+    grid-area: imagen4;
+}
+.imagen-5{
+    grid-area: imagen5;
+}
+.imagen-6{
+    grid-area: imagen6;
+}
+.imagen-7{
+    grid-area: imagen7;
+}
+.imagen-8{
+    grid-area: imagen8;
+}
+.imagen-9{
+    grid-area: imagen9;
+}
+.imagen-10{
+    grid-area: imagen10;
+}
+.imagen-11{
+    grid-area: imagen11;
+}
+.imagen-12{
+    grid-area: imagen12;
+}
+.imagen-13{
+    grid-area: imagen13;
+}
+.imagen-14{
+    grid-area: imagen14;
+}
+.imagen-15{
+    grid-area: imagen15;
+}
+.imagen-16{
+    grid-area: imagen16;
+}
+.imagen-17{
+    grid-area: imagen17;
+}
+.imagen-18{
+    grid-area: imagen18;
+}
+.imagen-21{
+    grid-area: imagen21;
+}
+.imagen-22{
+    grid-area: imagen22;
+}
+.imagen-23{
+    grid-area: imagen23;
+}
+.imagen-24{
+    grid-area: imagen24;
+}
+.iframe-1{
+    width: 100%;
+    grid-area: iframe1;
+}
+.iframe-2{
+    width: 100%;
+    grid-area: iframe2;
+}
