@@ -17,7 +17,7 @@ body {
 
 #body__home {
     background-image: url(../img/back_soad.jpg);
-    background-position: center center;
+    background-position: 10% 52px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -85,11 +85,12 @@ h1 {
     font-family: "Zilla Slab", serif;
     font-size: 1.1rem;
     text-transform: uppercase;
+    text-align: center;
     color: var(--color-secundario);
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1.3px;
-    padding: 0.5rem;
+    padding: 0.25rem;
     display: inline-block;
 }
 
@@ -215,7 +216,6 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin-top: 2rem;
     width: 100%;
 }
 
@@ -228,7 +228,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0;
     margin-top: 0;
@@ -237,6 +237,8 @@ h1 {
 .header__nav--footer ul li {
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
 }
 
 .header__nav--footer ul li a {
@@ -263,8 +265,9 @@ h1 {
 
 .iconify {
     color: var(--color-oscuro-semi);
-    width: 2.2rem;
+    width: 1.8rem;
     height: auto;
+    cursor: pointer;
 }
 
 .iconify:hover{
@@ -282,7 +285,7 @@ h1 {
     margin-bottom: 5px;
     font-family: 'Zilla Slab', serif;
     color: var(--color-oscuro-semi);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -306,11 +309,11 @@ h1 {
 
 .suscripcion input[type="button"] {
     border: none;
-    padding: 10px 0;
+    padding:  0;
     background-color: var(--color-oscuro);
     font-family: 'Zilla Slab', serif;
     color: var(--color-oscuro-semi);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
@@ -323,7 +326,15 @@ h1 {
 
 /* Estilos de paginas internas */
 /* MULTIMEDIA */
-.contenedor__multimedia {
+#body__multimedia{
+    background-image: url(../img/back_soad_multimedia.jpg);
+    background-repeat: no-repeat;
+    background-position: 45% 100px;
+    background-size: cover;
+}
+.contenedor__multimedia,
+.contenedor__discografia {
+    max-width: 95%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -518,19 +529,323 @@ figcaption {
     font-family: 'Zilla Slab', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
+    opacity: 0;
 }
 
 .footer.footer_media {
     width: 100%;
-    margin: 30px 0;
+    padding: 10px 0;
 }
+/* ********************************************** */
+
+
+/* Estilos de paginas internas */
+/* INTEGRANTES */
+#body__members{
+    background-image: url(../img/back_soad_members.jpg);
+    background-repeat: no-repeat;
+    background-position: 42% -265px;
+    background-size: cover;
+}
+.mainSectionIntegrantes{
+    width: 100%;
+    margin: 0 auto;
+}
+.mainSectionIntegrantes article{
+    margin: 2rem auto;
+}
+.card__img img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+}
+.namers__name h3{
+    font-family: var(--fuente-primaria);
+    color: var(--color-terciario);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px auto;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+.namers__name h3 span{
+    font-weight: 100;
+    color: var(--color-oscuro-semi);
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: normal;
+}
+.namers__rs{
+    text-align: center;
+}
+.namers__rs .iconify{
+    width: 2.2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.bio p{
+    font-family: var(--fuente-primaria);
+    color: var(--color-oscuro-semi);
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 10px 40px;
+    margin: 0;
+}
+/* ********************************************** */
+
+
+/* Estilos de paginas internas */
+/* DISCOGRAFIA */
+#body__disco{
+    background-image: url(../img/back_soad_shows.jpg);
+    background-repeat: no-repeat;
+    background-position: 86% 127px;
+    background-size: cover;
+}
+.mainSectionDisco{
+    width: 90%;
+    margin: 0 auto;
+}
+.containerDisco{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+    margin-top: 3rem;
+}
+.containerDisco article{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
+}
+.containerDisco article.disc-1{
+    background-image: url(../img/soaddisc1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.containerDisco article.disc-2{
+    background-image: url(../img/soaddisc2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.containerDisco article.disc-3{
+    background-image: url(../img/soaddisc3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.containerDisco article.disc-4{
+    background-image: url(../img/soaddisc4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.containerDisco article.disc-5{
+    background-image: url(../img/soaddisc5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cardiscografia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 25rem;
+    height: 100%;
+}
+.cardiscografia::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.8;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cabecera__album{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 0.70rem;
+}
+.cabecera__apps{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+.cabecera__apps .iconify{
+    width: 1.8rem;
+    color: var(--color-terciario);
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+.cabecera__apps .iconify:hover{
+    color: var(--color-secundario);
+}
+.cabecera__album h3{
+    position: relative;
+    text-transform: uppercase;
+    font-family: var(--fuente-primaria);
+    color: var(--color-terciario);
+    font-size: 1.3rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    padding-right: 0.5rem;
+    z-index: 10;
+}
+.cabecera__album span{
+    position: relative;
+    font-family: var(--fuente-primaria);
+    color: var(--color-oscuro-semi);
+    font-size: 1.4rem;
+    z-index: 10;
+}
+.playlist p{
+    color: var(--color-terciario);
+    font-family: var(--fuente-secundaria);
+    font-size: 1.2rem;
+    padding: 10px 10px 5px 10px;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 0;
+    text-align: left;
+}
+/* ********************************************** */
+
+
+/* Estilos de paginas internas */
+/* CONTACTO */
+#body__contacto {
+    background-image: url(../img/back_soad_contact.jpg);
+    background-position: 48% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenedor_contacto{
+    width: 95%;
+    margin: 0 auto;
+}
+.mainSectionContacto{
+    padding-bottom: 2rem;
+}
+.mainSectionContacto h1{
+    margin-bottom: 2rem;
+}
+.mainSectionContacto form{
+    color: var(--color-oscuro-semi);
+    font-family: var(--fuente-primaria);
+    font-size: 1.1rem;
+}
+.personales{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.personales label{
+    display: none;
+}
+.personales input[type="text"],
+.personales input[type="number"],
+.personales input[type="email"],
+option{
+    font-family: var(--fuente-primaria);
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: transparent;
+    color: var(--color-terciario);
+    border: none;
+    border-bottom: 1px solid var(--color-oscuro-semi);
+    padding: 1rem 0;
+}
+.newsletter,
+.favdisc,
+.country,
+.send{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.newsletter label{
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    padding-bottom: 0.25rem;
+}
+.favdisc p{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    padding-bottom: 0.25rem;
+}
+.country select{
+    background-color: var(--color-oscuro);
+    color: var(--color-oscuro-semi);
+    padding: 0.25rem;
+    font-size: .9rem;
+}
+.country option{
+    background-color: var(--color-oscuro);
+    color: var(--color-secundario);
+}
+.country label{
+    font-size: 1.2rem;
+}
+.send{
+    margin-bottom: 2rem;
+}
+.send input[type="button"]{
+    width: 100%;
+    color: var(--color-terciario);
+    font-family: var(--fuente-primaria);
+    font-size: 1.2rem;
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid var(--color-terciario);
+    cursor: pointer;
+}
+.send input[type="button"]:hover{
+    background-color: var(--color-terciario);
+    border: 1px solid var(--color-oscuro);
+    color: var(--color-oscuro);
+    transition: all .4s ease-in-out;
+}
+/* ************************************************ */
 /* ************************************************ */
 
 /* Media Query */
+/* Desde 480px */
+@media screen and (min-width: 479.98px){
+    .imagen figcaption{
+        opacity: 1;
+    }
+}
+/* ************************************************ */
 /* Desde 768px */
 @media screen and (min-width: 767.98px){
     #body__home{
-        background-position: 15% 327px;
+        background-image: url(../img/back_soad.jpg);
+        background-position: 16% 367px;
     }
     .contenedor_home{
         min-width: 768px;
@@ -560,7 +875,6 @@ figcaption {
     .footer{
         flex-direction: row;
         width: 100%;
-        margin: 50px auto 0;
     }
     .header__nav--footer{
         width: 30%;
@@ -573,6 +887,10 @@ figcaption {
     }
     .header__nav--footer ul li a{
         font-size: 1.3rem;
+    }
+    .iframe-2,
+    .iframe-1{
+        max-height: 315px;
     }
     .rrss{
         width: 30%;
@@ -592,22 +910,39 @@ figcaption {
         width: 75%;
         margin: 0 auto;
     }
+    .cardiscografia{
+        min-height: 27rem;
+    }
+    .cabecera__apps{
+        justify-content: flex-end;
+        padding-right: 2%;
+    }
 }
 /* ***************************************** */
 /* Desde 992px */
 @media screen and (min-width: 991.98px){
     #body__home{
-        background-position: 15% -30px;
+        background-image: url(../img/back_soad.jpg);
+        background-position: -161px -12px;
+    }
+    #body__members{
+        background-position: 35% -265px;
+    }
+    #body__disco{
+        background-position: 96% 33px;
     }
     .contenedor_home{
         min-width: 992px;
     }
+    .contenedor__multimedia{
+        max-width: 95%;
+    }
     .header{
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .header__logo{
-        width: 25%;
+        width: 20%;
         text-align: left;
     }
     .header__logo a img{
@@ -617,12 +952,13 @@ figcaption {
         width: 70%;
     }
     .main{
-        margin-top: 0;
+        width: 95%;
+        margin: 0 auto;
     }
     .mainSection{
         align-items: flex-end;
         justify-content: space-around;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
     .shows{
@@ -638,7 +974,7 @@ figcaption {
     }
     .footer{
         width: 100%;
-        margin-bottom: 25px;
+        padding: 15px 0;
     }
     .header__nav--footer{
         width: 25%;
@@ -656,32 +992,203 @@ figcaption {
     .rrss{
         width: 35%;
     }
+    .mainSectionMultimedia{
+        width: 100%;
+    }
+    .titleSection{
+        flex-direction: row;
+        align-items: center;
+    }
+    .titleSection h1{
+        margin-bottom: 20px;
+    }
+    .grid_media{
+        width: 100%;
+        row-gap: 0.8rem;
+        column-gap: 0.8rem;
+    }
+    .iframe-1{
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+    .imagen-1{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .imagen-2{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .imagen-3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .imagen-4{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .imagen-5{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .imagen-6{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .imagen-7{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .imagen-8{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+    .imagen-12{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .imagen-11{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    .grid_media .imagen-9{
+        max-height: 100%;
+        grid-row: 5/7;
+    }
+    .imagen-13{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    .imagen-14{
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    .imagen-15{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .imagen-21{
+        grid-column: 2/3;
+        grid-row: 8/9;
+    }
+    .grid_media .imagen-17{
+        max-height: 100%;
+        grid-column: 1/2;
+        grid-row: 7/9;
+    }
+    .iframe-2{
+        grid-column: 2/4;
+        grid-row: 7/8;
+        max-height: 290px;
+    }
+    .imagen-18{
+        grid-column: 3/4;
+        grid-row: 8/9;
+    }
+    .imagen-20{
+        grid-column: 3/4;
+        grid-row: 9/10;
+    }
+    .imagen-19{
+        grid-column: 1/3;
+    }
+    .mainSectionDisco{
+        width: 100%;
+    }
+    .namers,
+    .card__namersbio.par .namers{
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .contenedor__discografia{
+        max-width: 95%;
+        grid-template-rows: 10% auto 13%;
+    }
+    .containerDisco{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        margin-top: 0;
+    }
+    .bio p{
+        padding: 10px 100px;
+    }
+    .playlist p{
+        font-size: 1rem;
+    }
+    .mainSectionContacto{
+        position: relative;
+    }
+    .mainSectionContacto form{
+        position: relative;
+        right: -45%;
+        width: 55%;
+    }
+    .personales,
+    .newsletter,
+    .favdisc,
+    .country,
+    .send{
+        width: 95%;
+        margin-top: 2rem;
+    }
+    .personales input[type="text"],
+    .personales input[type="number"],
+    .personales input[type="email"]{
+        width: 85%;
+    }
+    .send input[type="button"]{
+        width: 100%;
+    }
 }
 
 /* ***************************************** */
 /* Desde 1280px */
 @media screen and (min-width: 1279.98px){
     #body__home{
-        background-position: 8% 20px;
+        background-position: -100px 20px;
+    }
+    #body__members{
+        background-position: 35% 0;
+    }
+    #body__disco{
+        background-position: 96% 33px;
     }
     .contenedor_home{
-        min-width: 1280px;
+        grid-template-rows: 20vh auto 20vh;
+    }
+    .contenedor_home,
+    .contenedor__multimedia,
+    .contenedor_contacto{
+        max-width: 1140px;
+        margin: 0 auto;
     }
     .header__nav ul{
         justify-content: flex-end;
     }
     .shows__fecha{
         width: 80%;
-        margin: 0 0 10px auto;
+        margin: 0 5px;
     }
     .shows h1{
-        text-align: center;
-        width: 85%;
-        margin: 0 0 10px auto;
+        position: absolute;
+        top: -67%;
+    }
+    .shows{
+        position: relative;
+        width: 100%;
+        display: flex;
+        order: 2;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
     .video{
-        width: 42%;
-        padding-bottom: 270px;
+        order: 1;
+        width: 52%;
+        padding-bottom: 315px;
     }
     .footer{
         flex-direction: row;
@@ -692,18 +1199,167 @@ figcaption {
     .rrsuscripcion{
         width: 45%;
     }
+    .grid_media{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .imagen-3{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .imagen-4{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .imagen-6{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .imagen-7{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .imagen-8{
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+    .imagen-12{
+        grid-row: 4/5;
+    }
+    .imagen-13{
+        grid-row: 4/5;
+    }
+    .imagen-11{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+    .grid_media .imagen-9{
+        grid-column: 4/5;
+        grid-row: 4/6;
+    }
+    .imagen-10{
+        grid-row: 5/6;
+    }
+    .imagen-14{
+        grid-row: 5/6;
+    }
+    .grid_media .imagen-17{
+        grid-row: 5/7;
+    }
+    .imagen-15{
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }
+    .iframe-2{
+        grid-column: 2/4;
+        grid-row: 6/7;
+    }
+    .imagen-16{
+        grid-row: 7/8;
+    }
+    .grid_media .imagen-19{
+        max-height: 100%;
+        grid-column: 4/5;
+        grid-row: 6/7;
+    }
+    .imagen-21{
+        grid-row: 7/8;
+    }
+    .imagen-18{
+        grid-row: 7/8;
+    }
+    .imagen-20{
+        grid-column: 4/5;
+        grid-row: 7/8;
+    }
+    .mainSectionIntegrantes article{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .titleSection h1{
+        font-size: 3rem;
+    }
+    .card{
+        display: flex;
+        align-items: center;
+    }
+    .card__namersbio.par .namers{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .card__namersbio.par .bio p{
+        text-align: right;
+    }
+    .card__namersbio.par .namers .namers__name{
+        order: 2;
+    }
+    .card__namersbio.par .namers .namers__name h3{
+        padding-right: 15px;
+    }
+    .card__img{
+        width: 25%;
+    }
+    .card__img img{
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .card__img.par{
+        order: 2;
+    }
+    .card__namersbio{
+        width: 75%;
+    }
+    .namers{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .namers__name h3,
+    .namers__rs{
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+        padding-left: 15px;
+        font-size: 1.8rem;
+    }
+    .namers__name h3 span{
+        font-size: 1.5rem;
+    }
+    .bio p{
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+    .contenedor__discografia{
+        max-width: 1140px;
+        grid-template-rows: 10% auto 20%;
+    }
 }
 
 /* ***************************************** */
 /* Desde 1366px */
 @media screen and (min-width: 1365.98px){
     #body__home{
-        background-position: 5% -30px;
+        background-image: url(../img/back_soad_test.jpg);
+        background-position: -50px -30px;
+    }
+    #body__members{
+        background-position: 30% -90px;
+    }
+    #body__disco{
+        background-position: 120% 33px;
     }
     .contenedor_home{
         grid-template-rows: 20vh 65vh 15vh;
-        max-width: 1280px;
+        max-width: 1140px;
         margin: 0 auto;
+    }
+    .contenedor__multimedia{
+        max-width: 1140px;
+    }
+    .mainSectionMultimedia,
+    .mainSectionIntegrantes{
+        width: 100%;
     }
     .header{
         justify-content: space-between;
@@ -712,6 +1368,7 @@ figcaption {
         width: 45%;
     }
     .main{
+        width: 100%;
         margin: 0;
     }
     .mainSection{
@@ -722,21 +1379,21 @@ figcaption {
     }
     .video{
         order: 1;
-        padding-bottom: 280px;
-        width: 40%;
+        padding-bottom: 320px;
+        width: 50%;
     }
     .shows{
         position: relative;
-        width: 70%;
+        width: 100%;
         display: flex;
         order: 2;
         margin-bottom: 0;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
     .shows h1{
         position: absolute;
-        top: -40%;
-        right: 14%;
+        top: -80%;
+        left: 1%;
         text-align: left;
     }
     .shows__fecha{
@@ -745,6 +1402,13 @@ figcaption {
     }
     .footer{
         align-items: center;
+    }
+    .footer.footer_media .header__nav--footer{
+        display: block;
+        width: 17%;
+    }
+    .footer.footer_media .header__nav--footer ul{
+        align-content: flex-end;
     }
     .header__nav--footer{
         display: none;
@@ -755,8 +1419,14 @@ figcaption {
         order: 1;
         justify-content: flex-start;
     }
+    .rrss.global{
+        width: 17%;
+    }
     .iconify{
         width: 1.8rem;
+    }
+    .footer.footer_media .suscripcion{
+        width: 52%;
     }
     .suscripcion{
         display: flex;
@@ -773,5 +1443,28 @@ figcaption {
     }
     .suscripcion input[type="button"]{
         margin-left: 10px;
+    }
+    .grid_media{
+        gap: 15px;
+    }
+    .iframe-1,
+    .iframe-2{
+        max-height: 100%;
+    }
+    .namers__name h3{
+        font-size: 1.8rem;
+    }
+    .namers__name h3 span{
+        font-size: 1.2rem;
+    }
+    .containerDisco{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .cardiscografia{
+        min-height: 22rem;
+    }
+    .playlist p{
+        font-size: .9rem;
     }
 }

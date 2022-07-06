@@ -7,112 +7,126 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
     <title>System Of A Down - Contacto</title>
 </head>
-<body>
-    <!-- Inicio Header -->
-    <header class="header">
+<body id="body__contacto">
+    <div class="contenedor_contacto">
+        <!-- Inicio Header -->
+        <header class="header">
 
-        <!-- Logo -->
-        <div class="header__logo">
-            <a href="./index.html">
-                <img src="./img/logo_soad.png" alt="logo">
-            </a>
-        </div>
-        <!-- Logo -->
+            <!-- Logo -->
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img src="./img/logo_soad.png" alt="logo">
+                </a>
+            </div>
+            <!-- Logo -->
 
-        <!-- Menu de navegacion -->
-        <nav class="header__nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./integrantes.html">Integrantes</a></li>
-                <li><a href="./discografia.html">Discografia</a></li>
-                <li><a href="./shows.html">Shows</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <!-- Menu de navegacion -->
+            <!-- Menu de navegacion -->
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./integrantes.html">Integrantes</a></li>
+                    <li><a href="./discografia.html">Discografia</a></li>
+                    <li><a href="./multimedia.html">Multimedia</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- Menu de navegacion -->
 
-    </header>
-    <!-- Fin Header -->
+        </header>
+        <!-- Fin Header -->
 
-    <!-- Comienzo Contenido -->
-    <main>
-        <section class="mainSectionContacto">
-            <h1>Suscripcion</h1>
-            <form>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" required>
+        <!-- Comienzo Contenido -->
+        <main>
+            <section class="mainSectionContacto">
+                <div class="titleSection">
+                    <h1>Suscripcion</h1>
+                </div>
 
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" placeholder="ingresa tu apellido" required>
+                <form>
+                    <div class="personales">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
 
-                <label for="edad">Edad</label>
-                <input type="number" name="edad" id="edad" placeholder="ingresa tu edad" required>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
 
-                <label for="email">eMail</label>
-                <input type="email" name="email" id="email" placeholder="ingresa tu email" required>
+                        <label for="edad">Edad</label>
+                        <input type="number" name="edad" id="edad" placeholder="Edad" required>
 
-                <br>
+                        <label for="email">eMail</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
 
-                <label for="novedades">Te gustaria recibir novedades de la banda?</label>
-                <input type="radio" name="novedades"> Si
-                <input type="radio" name="novedades"> No
+                    <div class="newsletter">
+                        <label for="novedades"><strong>Te gustaria recibir novedades de la banda?</strong></label>
+                        <input type="radio" name="novedades"> Si
+                        <input type="radio" name="novedades"> No
+                    </div>
 
-                <br>
-                <p>Tus discos favoritos?</p>
-                <input type="checkbox" name="system"> System of a Down
-                <input type="checkbox" name="toxicity"> Toxicity
-                <input type="checkbox" name="mezmerize"> Mezmerize
-                <input type="checkbox" name="hypnotize"> Hypnotize
+                    <div class="favdisc">
+                        <p><strong>Tus discos favoritos?</strong></p>
+                        <input type="checkbox" name="system"> System of a Down
+                        <input type="checkbox" name="toxicity"> Toxicity
+                        <input type="checkbox" name="steal"> Steal this Album!
+                        <input type="checkbox" name="mezmerize"> Mezmerize
+                        <input type="checkbox" name="hypnotize"> Hypnotize
+                    </div>
 
-                <br>
-                <label for="pais">De que pais eres?</label>
-                <select name="pais" id="pais">
-                    <option value="">Seleccionar</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Uruguay">Uruguay</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Mexico">Mexico</option>
-                </select>
+                    <div class="country">
+                        <label for="pais"><strong>De que pais eres?</strong></label>
+                        <select name="pais" id="pais">
+                            <option value="">Seleccionar</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Mexico">Mexico</option>
+                        </select>
+                    </div>
+                    <div class="send">
+                        <input type="button" value="Enviar">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <!-- Fin Contenido -->
 
-                <br>
+        <!-- Inicio Footer -->
+        <footer class="footer footer_media">
+            <!-- Menu footer -->
+            <nav class="header__nav--footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./integrantes.html">Integrantes</a></li>
+                    <li><a href="./discografia.html">Discografia</a></li>
+                    <li><a href="./multimedia.html">Multimedia</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
 
-                <input type="button" value="Enviar">
-            </form>
-        </section>
-    </main>
-    <!-- Fin Contenido -->
+            <div class="rrss global">
+                <a href="#"><span class="iconify" data-icon="bxl:facebook"></span></a>
+                <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
+                <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
+                <a href="#"><span class="iconify" data-icon="tabler:brand-discord"></span></a>
+            </div>
 
-    <!-- Inicio Footer -->
-    <footer class="footer">
-        <!-- Menu footer -->
-        <nav class="header__nav--footer">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./integrantes.html">Integrantes</a></li>
-                <li><a href="./discografia.html">Discografia</a></li>
-                <li><a href="./shows.html">Shows</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+            <!-- Suscripcion novedades -->
+            <div class="suscripcion">
+                <p>Quiero recibir novedades</p>
+                <form action="#">
+                    <input type="email" name="email" id="email" placeholder="ingresa tu email">
 
-        <!-- Redes Sociales -->
-        <div class="rrss">
-            <h1>Redes Sociales</h1>
-        </div>
+                    <input type="button" value="Enviar">
+                </form>
+            </div>
+        </footer>
+        <!-- Fin Footer -->
+    </div>
 
-        <!-- Suscripcion novedades -->
-        <div class="suscripcion">
-            <p>Quiero recibir novedades</p>
-            <form action="#">
-                <input type="email" name="email" id="email" placeholder="ingresa tu email">
-
-                <input type="button" value="Enviar">
-            </form>
-        </div>
-    </footer>
-    <!-- Fin Footer -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </body>
 </html>
