@@ -68,14 +68,16 @@ h1 {
 }
 
 .header__nav ul {
+    width: 75%;
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     padding-inline-start: 0;
     margin: 10px auto;
 }
 .header__nav ul li {
+    text-align: center;
     margin: 0.2rem;
     border: 2px solid var(--color-oscuro-semi);
 }
@@ -97,7 +99,7 @@ h1 {
 }
 .header__nav ul li a {
     font-family: "Zilla Slab", serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     text-align: center;
     color: var(--color-oscuro-semi);
@@ -254,7 +256,7 @@ h1 {
 
 .header__nav--footer ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     list-style-type: none;
     justify-content: center;
     align-items: center;
@@ -293,7 +295,7 @@ h1 {
 
 .iconify {
     color: var(--color-oscuro-semi);
-    width: 1.8rem;
+    width: 1.4rem;
     height: auto;
     cursor: pointer;
 }
@@ -363,7 +365,6 @@ h1 {
 }
 .contenedor__multimedia,
 .contenedor__discografia {
-    max-width: 95%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -595,7 +596,7 @@ figcaption {
 .namers__name h3{
     font-family: var(--fuente-primaria);
     color: var(--color-terciario);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
     margin: 10px auto;
@@ -622,7 +623,7 @@ figcaption {
     color: var(--color-oscuro-semi);
     font-weight: 400;
     font-size: 1.4rem;
-    padding: 10px 40px;
+    padding: 10px 15px;
     margin: 0;
 }
 /* ********************************************** */
@@ -753,7 +754,7 @@ figcaption {
 .playlist p{
     color: var(--color-terciario);
     font-family: var(--fuente-secundaria);
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 10px 10px 5px 10px;
     z-index: 10;
     position: relative;
@@ -769,10 +770,6 @@ figcaption {
     background-image: url(../img/back_soad_contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-.contenedor_contacto{
-    width: 95%;
-    margin: 0 auto;
 }
 .mainSectionContacto{
     padding-bottom: 2rem;
@@ -896,6 +893,12 @@ option{
     .header__logo a img{
         max-width: 50%;
     }
+    .header__nav ul{
+        width: 50%;
+    }
+    .header__nav ul li a{
+        font-size: 1.4rem;
+    }
     .main{
         margin-bottom: 2rem;
     }
@@ -927,6 +930,10 @@ option{
     }
     .header__nav--footer ul li a{
         font-size: 1.3rem;
+    }
+    .bio{
+        max-width: 90%;
+        margin: 0 auto;
     }
     .iframe-2,
     .iframe-1{
@@ -974,8 +981,10 @@ option{
     #body__contacto {
         background-position: 240px 0;
     }
-    .contenedor_home{
-        min-width: 992px;
+    .contenedor_home,
+    .contenedor_contacto{
+        width: 95%;
+        margin: 0 auto;
     }
     .contenedor__multimedia{
         max-width: 95%;
@@ -993,6 +1002,13 @@ option{
     }
     .header__nav{
         width: 70%;
+    }
+    .header__nav ul{
+        flex-direction: row;
+        width: 100%;
+    }
+    .header__nav ul li a{
+        font-size: 1.1rem;
     }
     .main{
         width: 95%;
@@ -1193,7 +1209,7 @@ option{
 /* Desde 1280px */
 @media screen and (min-width: 1279.98px){
     #body__home{
-        background-position: -100px 20px;
+        background-position: 105px -85px;
     }
     #body__members{
         background-position: 35% 0;
@@ -1236,6 +1252,9 @@ option{
         order: 1;
         width: 52%;
         padding-bottom: 315px;
+    }
+    .bio{
+        max-width: 100%;
     }
     .footer{
         flex-direction: row;
@@ -1387,7 +1406,7 @@ option{
 /* Desde 1366px */
 @media screen and (min-width: 1365.98px){
     #body__home{
-        background-image: url(../img/back_soad_test.jpg);
+        background-image: url(../img/back_soad_large.jpg);
         background-position: -50px -30px;
     }
     #body__members{
@@ -1425,7 +1444,7 @@ option{
         width: 100%;
         height: 100%;
         align-items: flex-end;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .video{
         order: 1;
@@ -1471,9 +1490,6 @@ option{
     }
     .rrss.global{
         width: 17%;
-    }
-    .iconify{
-        width: 1.8rem;
     }
     .footer.footer_media .suscripcion{
         width: 52%;
