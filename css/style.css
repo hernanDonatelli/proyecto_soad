@@ -528,21 +528,10 @@ figcaption {
     background-position: 86% 127px;
     background-size: cover;
 }
-.mainSectionDisco{
-    width: 90%;
-    margin: 0 auto;
-}
-.containerDisco{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    row-gap: 2rem;
-    margin-top: 3rem;
-}
 .containerDisco article{
     position: relative;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     -webkit-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.75);
@@ -578,11 +567,7 @@ figcaption {
     background-position: center;
 }
 .cardiscografia{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 25rem;
-    height: 100%;
+    height: 350px;
 }
 .cardiscografia::before{
     content: ' ';
@@ -596,23 +581,7 @@ figcaption {
     z-index: 1;
     opacity: 0.8;
 }
-.cabecera{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.cabecera__album{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-left: 0.70rem;
-}
 .cabecera__apps{
-    width: 30%;
-    display: flex;
-    justify-content: center;
     z-index: 10;
 }
 .cabecera__apps .iconify{
@@ -635,7 +604,7 @@ figcaption {
     padding-right: 0.5rem;
     z-index: 10;
 }
-.cabecera__album span{
+.cabecera__album h5{
     position: relative;
     font-family: var(--fuente-primaria);
     color: var(--color-oscuro-semi);
@@ -797,9 +766,6 @@ option{
     .iframe-2,
     .iframe-1{
         max-height: 315px;
-    }
-    .cardiscografia{
-        min-height: 27rem;
     }
     .cabecera__apps{
         justify-content: flex-end;
@@ -963,11 +929,6 @@ option{
     .contenedor__discografia{
         max-width: 95%;
         grid-template-rows: 10% auto 13%;
-    }
-    .containerDisco{
-        grid-template-columns: 1fr 1fr;
-        column-gap: 2rem;
-        margin-top: 0;
     }
     .bio p{
         padding: 10px 50px;
@@ -1278,10 +1239,6 @@ option{
     }
     .namers__name h3 span{
         font-size: 1.2rem;
-    }
-    .containerDisco{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
     }
     .cardiscografia{
         min-height: 22rem;
