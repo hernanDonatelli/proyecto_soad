@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,191 +14,195 @@
     <title>System of a Down - Integrantes</title>
 </head>
 <body id="body__members">
-    <div class="contenedor__multimedia">
+    <div class="container">
         <!-- Inicio Header -->
-        <header class="header">
-
-            <!-- Logo -->
-            <div class="header__logo">
-                <a href="./index.html">
-                    <img src="./img/logo_soad.png" alt="logo">
-                </a>
+        <header class="container-fluid header">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img class="img-fluid img-cabecera animate__animated animate__fadeIn" src="./img/logo_soad.png" alt="SOAD">
+                        </a>
+                        <button class="navbar-toggler burguer" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse header__nav" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item animate__animated animate__zoomIn mx-auto mx-lg-1">
+                                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item animate__animated animate__zoomIn mx-auto mx-lg-1">
+                                    <a class="nav-link active" href="./integrantes.html">Integrantes</a>
+                                </li>
+                                <li class="nav-item animate__animated animate__zoomIn mx-auto mx-lg-1">
+                                    <a class="nav-link" href="./discografia.html">Discografía</a>
+                                </li>
+                                <li class="nav-item animate__animated animate__zoomIn mx-auto mx-lg-1">
+                                    <a class="nav-link" href="./multimedia.html">Multimedia</a>
+                                </li>
+                                <li class="nav-item animate__animated animate__zoomIn mx-auto mx-lg-1">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <!-- Logo -->
-
-            <!-- Menu de navegacion -->
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./integrantes.html">Integrantes</a></li>
-                    <li><a href="./discografia.html">Discografia</a></li>
-                    <li><a href="./multimedia.html">Multimedia</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <!-- Menu de navegacion -->
-
         </header>
         <!-- Fin Header -->
 
         <!-- Comienzo Contenido -->
-        <main>
-            <section class="mainSectionIntegrantes">
-
-                <!-- Integrantes -->
-                <div class="titleSection">
-                    <h1>Integrantes</h1>
-                </div>
-                <article>
-                    <div class="card">
-                        <div class="card__img">
-                            <img src="./img/vocalista.jpg" alt="Serg Tankian">
-                        </div>
-                        <div class="card__namersbio">
-                            <div class="namers">
-                                <div class="namers__name">
-                                    <h3>Serj Tankian <span>Vocalista</span></h3>
-                                </div>
-                                <div class="namers__rs">
-                                    <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
-                                    <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
-                                </div>
-                            </div>
-                            <div class="bio">
-                                <p>
-                                    De padres armenios, nace en Beirut, el 21 de agosto de 1967. Sus cuatro abuelos fueron supervivientes del genocidio armenio. A los 7 años de edad, se trasladó con sus padres a Los Ángeles, California, debido a la Guerra Civil Libanesa de 1975. En su juventud, asistió a un colegio armenio llamado Rose and Alex Pilibos Armenian School, en Los Ángeles, a donde también asistieron dos de los futuros miembros de System of a Down, Daron Malakian y Shavo Odadjian.
-                                </p>
-                                <p>
-                                    Tankian ingresó en la Universidad Estatal de California, Northridge,graduándose con un título en marketing en 1989, en donde comenzó a tocar instrumentos, particularmente el teclado, y a escribir canciones. También comenzó su activismo durante sus años universitarios, intentando crear conciencia sobre el reconocimiento del Genocidio Armenio durante su periodo como presidente de la Asociación de Estudiantes Armenios de la universidad.
-                                </p>
-                            </div>
-                        </div>
+        <main class="container-fluid main-integrantes mb-xl-0 pt-xl-3 px-xl-0 mt-xl-1 mt-xxl-3">
+            <div class="row">
+                <section>
+                    <!-- Integrantes -->
+                    <div class="titleSection">
+                        <h1>Integrantes</h1>
                     </div>
-                </article>
-
-                <article>
-                    <div class="card">
-                        <div class="card__img par">
-                            <img src="./img/guitarra.jpg" alt="Daron Malakian">
-                        </div>
-                        <div class="card__namersbio par">
-                            <div class="namers">
-                                <div class="namers__name">
-                                    <h3><span>Guitarra</span> Daron Malakian</h3>
-                                </div>
-                                <div class="namers__rs">
-                                    <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
-                                    <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
-                                </div>
+                    <article class="my-5">
+                        <div class="card-int d-xl-flex justify-content-xl-around align-items-lg-center align-items-xl-start align-items-xxl-center">
+                            <div class="card__img">
+                                <img class="img-fluid" src="./img/vocalista.jpg" alt="Serg Tankian">
                             </div>
-                            <div class="bio">
-                                <p>
-                                    Daron nació el 18 de julio de 1975, en Hollywood. Hijo único de Vartan y Zepur Malakian, iraquíes de ascendencia armenia. A muy temprana edad, Daron entró en el heavy metal; gracias a que su primo distante tocó una grabación de Kiss cuando solo tenía 4 años, y desde allí fue enganchado. Daron empezó escuchando a AC/DC, Kiss, Van Halen, Iron Maiden, Judas Priest, Motörhead, Black Sabbath, Ozzy Osbourne, Dio, Helloween entre otros.
-                                </p>
-                                <p>
-                                    En su adolescencia, cambió sus ritmos musicales a un metal más pesado como el de Slayer, Megadeth, Metallica, Exodus, Anthrax, Pantera, Overkill, Kreator, Destruction, Sodom, Mercyful Fate, Death, Deicide y Cannibal Corpse. A sus 17 años tuvo una influencia muy marcada por The Beatles y Peter, Paul and Mary algo muy importante para su desarrollo como compositor.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="card">
-                        <div class="card__img">
-                            <img src="./img/bajo.jpg" alt="Shavo Odadjian">
-                        </div>
-                        <div class="card__namersbio">
-                            <div class="namers">
-                                <div class="namers__name">
-                                    <h3>Shavo Odadjian <span>Bajo</span></h3>
+                            <div class="card__namersbio mt-2 mt-xl-0">
+                                <div class="namers col-12 col-lg-6 col-xl-12 mx-lg-auto d-flex flex-column justify-content-around flex-lg-row align-items-lg-center justify-content-xl-start align-items-xl-center">
+                                    <div class="namers__name">
+                                        <h3>Serj Tankian <span>Voz</span></h3>
+                                    </div>
+                                    <div class="namers__rs">
+                                        <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
+                                        <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
+                                    </div>
                                 </div>
-                                <div class="namers__rs">
-                                    <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
-                                    <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
+                                <div class="bio">
+                                    <p>
+                                        De padres armenios, nace en Beirut, el 21 de agosto de 1967. Sus cuatro abuelos fueron supervivientes del genocidio armenio. A los 7 años de edad, se trasladó con sus padres a Los Ángeles, California, debido a la Guerra Civil Libanesa de 1975. En su juventud, asistió a un colegio armenio llamado Rose and Alex Pilibos Armenian School, en Los Ángeles, a donde también asistieron dos de los futuros miembros de System of a Down, Daron Malakian y Shavo Odadjian.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="bio">
-                                <p>
-                                    Odadjian nació en Ereván, Unión Soviética y se mudó a California a muy temprana edad, donde fue criado en gran parte por su abuela.
+                        </div>
+                    </article>
 
-                                    Estudió en la Rose and Alex Pilibos Armenian School de Los Ángeles, una escuela armenia, en la que también estudiaron sus futuros compañeros de grupo Serj Tankian y Daron Malakian, aunque en diferentes cursos por la diferencia de edades.
-                                </p>
-                                <p>
-                                    Odadjian toca el bajo en System of a Down, y también canta coros en vivo. Su estilo habitual de tocar el bajo es con un plectro, a pesar de que también se ha visto tocar con sus dedos durante ciertas canciones. Odadjian ha escrito también varias canciones de System of a Down, entre ellas "Toxicity", "Sugar", "Jet-Pilot", "Bounce", "Mind", "Dreaming", y "U Fig". Ha dirigido la mayoría de los vídeos musicales de la banda, y es responsable de la escenografía y la iluminación para cada una de sus presentaciones en vivo.
-                                </p>
+                    <article class="my-5">
+                        <div class="card-int d-xl-flex justify-content-xl-around align-items-lg-center align-items-xl-start align-items-xxl-center">
+                            <div class="card__img par">
+                                <img class="img-fluid" src="./img/guitarra.jpg" alt="Daron Malakian">
                             </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="card">
-                        <div class="card__img par">
-                            <img src="./img/bateria.jpg" alt="John Dolayan">
-                        </div>
-                        <div class="card__namersbio par">
-                            <div class="namers">
-                                <div class="namers__name">
-                                    <h3><span>Bateria</span> John Dolmayan</h3>
+                            <div class="card__namersbio par mt-2 mt-xl-0">
+                                <div class="namers col-12 col-lg-6 col-xl-12 mx-lg-auto d-flex flex-column justify-content-around flex-lg-row align-items-lg-center justify-content-xl-end align-items-xl-center">
+                                    <div class="namers__name">
+                                        <h3>Daron Malakian <span>Guitarra</span></h3>
+                                    </div>
+                                    <div class="namers__rs">
+                                        <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
+                                        <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
+                                    </div>
                                 </div>
-                                <div class="namers__rs">
-                                    <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
-                                    <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
+                                <div class="bio">
+                                    <p>
+                                        Daron nació el 18 de julio de 1975, en Hollywood. Hijo único de Vartan y Zepur Malakian, iraquíes de ascendencia armenia. A muy temprana edad, Daron entró en el heavy metal; gracias a que su primo distante tocó una grabación de Kiss cuando solo tenía 4 años, y desde allí fue enganchado. Daron empezó escuchando a AC/DC, Kiss, Van Halen, Iron Maiden, Judas Priest, Motörhead, Black Sabbath, Ozzy Osbourne, Dio, Helloween entre otros.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="bio">
-                                <p>
-                                    Dolmayan nació en Beirut, capítal de Líbano, en familia de padres armenios.Debido a la Guerra Civil Libanesa, su familia decidió emigrar a Toronto (Canadá) para luego finalmente mudarse a California, en EE. UU..
+                        </div>
+                    </article>
 
-                                    Aprendió a tocar la batería poniendo discos y practicando durante horas al día, y continuó practicando durante años. Dolmayan describe su estilo musical influido por todo lo que pudo tener en sus manos, incluidos los álbumes de jazz pertenecientes a su padre y los álbumes de rock que compartió con sus amigos.
-                                </p>
-                                <p>
-                                    Dolmayan se unió a System of a Down en 1997 después de que su baterista original, Andy Khachaturian, dejase la banda después de una lesión en la mano.
+                    <article class="my-5">
+                        <div class="card-int d-xl-flex justify-content-xl-around align-items-lg-center align-items-xl-start align-items-xxl-center">
+                            <div class="card__img">
+                                <img class="img-fluid" src="./img/bajo.jpg" alt="Shavo Odadjian">
+                            </div>
+                            <div class="card__namersbio mt-2 mt-xl-0">
+                                <div class="namers col-12 col-lg-6 col-xl-12 mx-lg-auto d-flex flex-column justify-content-around flex-lg-row align-items-lg-center justify-content-xl-start align-items-xl-center">
+                                    <div class="namers__name">
+                                        <h3>Shavo Odadjian <span>Bajo</span></h3>
+                                    </div>
+                                    <div class="namers__rs">
+                                        <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
+                                        <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
+                                    </div>
+                                </div>
+                                <div class="bio">
+                                    <p>
+                                        Odadjian nació en Ereván, Unión Soviética y se mudó a California a muy temprana edad, donde fue criado en gran parte por su abuela.
 
-                                    Dolmayan grabó cinco álbumes con System of a Down: System of a Down (album) (1998), Toxicity (2001), Steal This Album! (2002) y, más recientemente, Mezmerize (2005), y Hypnotize (2005).
-                                </p>
+                                        Estudió en la Rose and Alex Pilibos Armenian School de Los Ángeles, una escuela armenia, en la que también estudiaron sus futuros compañeros de grupo Serj Tankian y Daron Malakian, aunque en diferentes cursos por la diferencia de edades.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </article>
-            </section>
+                    </article>
+
+                    <article class="my-5">
+                        <div class="card-int d-xl-flex justify-content-xl-around align-items-lg-center align-items-xl-start align-items-xxl-center">
+                            <div class="card__img par">
+                                <img class="img-fluid" src="./img/bateria.jpg" alt="John Dolayan">
+                            </div>
+                            <div class="card__namersbio par mt-2 mt-xl-0">
+                                <div class="namers col-12 col-lg-6 col-xl-12 mx-lg-auto d-flex flex-column justify-content-around flex-lg-row align-items-lg-center justify-content-xl-end align-items-xl-center">
+                                    <div class="namers__name d-xl-flex">
+                                        <h3>John Dolmayan <span>Bateria</span></h3>
+                                    </div>
+                                    <div class="namers__rs">
+                                        <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
+                                        <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
+                                    </div>
+                                </div>
+                                <div class="bio">
+                                    <p>
+                                        Dolmayan nació en Beirut, capítal de Líbano, en familia de padres armenios.Debido a la Guerra Civil Libanesa, su familia decidió emigrar a Toronto (Canadá) para luego finalmente mudarse a California, en EE. UU..
+
+                                        Aprendió a tocar la batería poniendo discos y practicando durante horas al día, y continuó practicando durante años. Dolmayan describe su estilo musical influido por todo lo que pudo tener en sus manos, incluidos los álbumes de jazz pertenecientes a su padre y los álbumes de rock que compartió con sus amigos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
         </main>
         <!-- Fin Contenido -->
 
         <!-- Inicio Footer -->
-        <footer class="footer footer_media">
-            <!-- Menu footer -->
-            <nav class="header__nav--footer">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./integrantes.html">Integrantes</a></li>
-                    <li><a href="./discografia.html">Discografia</a></li>
-                    <li><a href="./multimedia.html">Multimedia</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        <footer id="footer-int" class="container-fluid footer footer-int py-xl-0 mb-xl-5">
+            <div class="row h-100">
+                <section class="d-flex flex-column justify-content-between align-items-center mb-3 flex-xl-row mb-xl-0 flex-xl-wrap">
+                    <!-- Menu footer -->
+                    <nav class="header__nav--footer order-1 col-12 col-lg-9 order-xl-1 mx-xl-auto mb-xl-4 col-xxl-8">
+                        <ul class="list-unstyled d-flex flex-column align-items-center justify-content-center mb-0 flex-md-row justify-content-md-between">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="./integrantes.html">Integrantes</a></li>
+                            <li><a href="./discografia.html">Discografia</a></li>
+                            <li><a href="./multimedia.html">Multimedia</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Redes Sociales -->
+                    <div class="rrss order-2 d-flex justify-content-evenly my-4 mx-auto col-8 col-lg-6 col-xl-4 order-xl-2 mx-xl-0 justify-content-xl-around col-xxl-3">
+                        <a href="#"><span class="iconify" data-icon="bxl:facebook"></span></a>
+                        <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
+                        <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
+                        <a href="#"><span class="iconify" data-icon="fontisto:apple-music"></span></a>
+                    </div>
+                    <!-- Suscripcion novedades -->
+                    <div class="suscripcion order-3 col-8 col-lg-6 col-xl-5 mx-auto order-xl-1 mx-xl-0">
+                        <p class="text-xl-start">Quiero recibir novedades</p>
+                        <form class="d-flex flex-column flex-xl-row" action="#">
+                            <input type="email" name="email" id="email" placeholder="ingresa tu email">
 
-            <div class="rrss global">
-                <a href="#"><span class="iconify" data-icon="bxl:facebook"></span></a>
-                <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
-                <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
-                <a href="#"><span class="iconify" data-icon="fontisto:apple-music"></span></a>
-            </div>
-
-            <!-- Suscripcion novedades -->
-            <div class="suscripcion">
-                <p>Quiero recibir novedades</p>
-                <form action="#">
-                    <input type="email" name="email" id="email" placeholder="ingresa tu email">
-
-                    <input type="button" value="Enviar">
-                </form>
+                            <input type="button" value="Enviar">
+                        </form>
+                    </div>
+                </section>
             </div>
         </footer>
         <!-- Fin Footer -->
     </div>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </body>
 </html>

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,113 +14,133 @@
     <title>System Of A Down - Home</title>
 </head>
 <body id="body__home">
-    <div class="contenedor_home">
+    <div class="container wraper">
         <!-- Inicio Header -->
-        <header class="header">
-
-            <!-- Logo -->
-            <div class="header__logo animate__animated animate__bounceInDown">
-                <a href="./index.html">
-                    <img src="./img/logo_soad.png" alt="logo">
-                </a>
+        <header class="container-fluid header">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img class="img-fluid img-cabecera animate__animated animate__fadeIn" src="./img/logo_soad.png" alt="SOAD">
+                        </a>
+                        <button class="navbar-toggler burguer" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse header__nav" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item animate__animated animate__zoomIn mx-auto mx-lg-1">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item animate__animated animate__zoomIn mx-auto mx-lg-1">
+                                    <a class="nav-link" href="./integrantes.html">Integrantes</a>
+                                </li>
+                                <li class="nav-item animate__animated animate__zoomIn mx-auto mx-lg-1">
+                                    <a class="nav-link" href="./discografia.html">Discografía</a>
+                                </li>
+                                <li class="nav-item animate__animated animate__zoomIn mx-auto mx-lg-1">
+                                    <a class="nav-link" href="./multimedia.html">Multimedia</a>
+                                </li>
+                                <li class="nav-item animate__animated animate__zoomIn mx-auto mx-lg-1">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <!-- Logo -->
-
-            <!-- Menu de navegacion -->
-            <nav class="header__nav">
-                <ul>
-                    <li class="animate__animated animate__zoomIn"><a href="index.html">Home</a></li>
-                    <li class="animate__animated animate__zoomIn"><a href="./integrantes.html">Integrantes</a></li>
-                    <li class="animate__animated animate__zoomIn"><a href="./discografia.html">Discografia</a></li>
-                    <li class="animate__animated animate__zoomIn"><a href="./multimedia.html">Multimedia</a></li>
-                    <li class="animate__animated animate__zoomIn"><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <!-- Menu de navegacion -->
-
         </header>
         <!-- Fin Header -->
-
         <!-- Comienzo Contenido -->
-        <main class="main">
-            <section class="mainSection">
+        <main class="container-fluid main mb-xl-0 pt-xl-3 px-xl-0">
+            <div class="row h-100">
+                <section class="d-flex flex-column align-items-lg-center align-items-xl-end justify-content-xl-around">
+                    <!-- Proximos Shows -->
+                    <div class="shows col-12 col-md-10 col-lg-7 order-2 mx-auto mt-5 mt-xl-0 mb-xl-0">
+                        <h1>Proximos Shows</h1>
 
-                <!-- Proximos Shows -->
-                <div class="shows">
-                    <h1>Proximos Shows</h1>
+                        <div class="shows__fecha d-flex  flex-column  justify-content-center animate__animated animate__bounceInUp mb-md-4 mb-xl-2">
+                            <div class="shows__fecha__date">
+                                <p class="estadio">Estadio Azteca</p>
+                                <p>JUN.22, Mexico DF</p>
+                                <a class="btn-ticket" href="#">Tickets</a>
+                            </div>
+                        </div>
+                        <div class="shows__fecha d-flex  flex-column  justify-content-center animate__animated animate__bounceInUp mb-md-4 mb-xl-2">
+                            <div class="shows__fecha__date">
+                                <p class="estadio">Jalisco Coliseum</p>
+                                <p>JUN.25, Jalisco</p>
+                                <a class="btn-ticket" href="#">Tickets</a>
+                            </div>
+                        </div>
+                        <div class="shows__fecha d-flex  flex-column  justify-content-center animate__animated animate__bounceInUp mb-md-4 mb-xl-2">
+                            <div class="shows__fecha__date">
+                                <p class="estadio">Teatro Monterrey</p>
+                                <p>JUN.28, Monterrey</p>
+                                <a class="btn-ticket" href="#">Tickets</a>
+                            </div>
+                        </div>
+                        <div class="shows__fecha d-flex  flex-column  justify-content-center animate__animated animate__bounceInUp mb-md-4 mb-xl-2">
+                            <div class="shows__fecha__date">
+                                <p class="estadio">Texas RS Stadium</p>
+                                <p>JUL.05, Texas</p>
+                                <a class="btn-ticket" href="#">Tickets</a>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="shows__fecha animate__animated animate__bounceInUp">
-                        <div class="shows__fecha__date">
-                            <p class="estadio">Estadio Azteca</p>
-                            <p>JUN.22, Mexico DF</p>
-                            <a class="btn" href="#">Tickets</a>
-                        </div>
+                    <!-- Ultimo Concierto en Vivo -->
+                    <div class="video col-12 order-1 mt-sm-5 mt-xl-0 mb-xl-3">
+                        <iframe width="450" height="253" src="https://www.youtube.com/embed/VJ_k-AwDdaA?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="shows__fecha animate__animated animate__bounceInUp">
-                        <div class="shows__fecha__date">
-                            <p class="estadio">Jalisco Coliseum</p>
-                            <p>JUN.25, Jalisco</p>
-                            <a class="btn" href="#">Tickets</a>
-                        </div>
-                    </div>
-                    <div class="shows__fecha animate__animated animate__bounceInUp">
-                        <div class="shows__fecha__date">
-                            <p class="estadio">Teatro Monterrey</p>
-                            <p>JUN.28, Monterrey</p>
-                            <a class="btn" href="#">Tickets</a>
-                        </div>
-                    </div>
-                    <div class="shows__fecha animate__animated animate__bounceInUp">
-                        <div class="shows__fecha__date">
-                            <p class="estadio">Texas RS Stadium</p>
-                            <p>JUL.05, Texas</p>
-                            <a class="btn" href="#">Tickets</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Ultimo Concierto en Vivo -->
-                <div class="video">
-                    <iframe width="450" height="253" src="https://www.youtube.com/embed/VJ_k-AwDdaA?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
         <!-- Fin Contenido -->
 
         <!-- Inicio Footer -->
-        <footer class="footer">
-            <!-- Menu footer -->
-            <nav class="header__nav--footer">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./integrantes.html">Integrantes</a></li>
-                    <li><a href="./discografia.html">Discografia</a></li>
-                    <li><a href="./multimedia.html">Multimedia</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        <footer class="container-fluid footer py-xl-0">
+            <div class="row h-100">
+                <section class="d-flex flex-column justify-content-between align-items-center mb-3 flex-xl-row mb-xl-0">
+                    <!-- Menu footer -->
+                    <nav class="header__nav--footer order-1 col-12 col-lg-9 col-xl-3 mx-xl-auto order-xl-3 d-xl-none">
+                        <ul class="list-unstyled d-flex flex-column align-items-center justify-content-center mb-0 flex-md-row justify-content-md-between">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="./integrantes.html">Integrantes</a></li>
+                            <li><a href="./discografia.html">Discografia</a></li>
+                            <li><a href="./multimedia.html">Multimedia</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Redes Sociales -->
+                    <div class="rrss order-2 d-flex justify-content-evenly my-4 mx-auto col-8 col-lg-6 col-xl-4 order-xl-2 mx-xl-0 col-xxl-3">
+                        <a href="#"><span class="iconify" data-icon="bxl:facebook"></span></a>
+                        <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
+                        <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
+                        <a href="#"><span class="iconify" data-icon="fontisto:apple-music"></span></a>
+                    </div>
+                    <!-- Suscripcion novedades -->
+                    <div class="suscripcion order-3 col-8 col-lg-6 col-xl-6 mx-auto order-xl-1 mx-xl-0">
+                        <p class="text-xl-start">Quiero recibir novedades</p>
+                        <form class="d-flex flex-column flex-xl-row" action="#">
+                            <input type="email" name="email" id="email" placeholder="ingresa tu email">
 
-                <div class="rrss">
-                    <a href="#"><span class="iconify" data-icon="bxl:facebook"></span></a>
-                    <a href="#"><span class="iconify" data-icon="bxl:instagram"></span></a>
-                    <a href="#"><span class="iconify" data-icon="bxl:twitter"></span></a>
-                    <a href="#"><span class="iconify" data-icon="fontisto:apple-music"></span></a>
-                </div>
-
-                <!-- Suscripcion novedades -->
-                <div class="suscripcion">
-                    <p>Quiero recibir novedades</p>
-                    <form action="#">
-                        <input type="email" name="email" id="email" placeholder="ingresa tu email">
-
-                        <input type="button" value="Enviar">
-                    </form>
-                </div>
+                            <input type="button" value="Enviar">
+                        </form>
+                    </div>
+                </section>
+            </div>
         </footer>
         <!-- Fin Footer -->
     </div>
 
+<<<<<<< HEAD
 
+=======
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+>>>>>>> bsadd
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </body>
 </html>
