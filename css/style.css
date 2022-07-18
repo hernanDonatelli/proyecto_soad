@@ -3,7 +3,6 @@
     --color-oscuro-semi: #888888;
     --color-secundario: #dcd0d0;
     --color-terciario: #c0b283;
-    --color-coral: #ff533d;
     --fuente-primaria: "Zilla Slab", serif;
     --fuente-secundaria: "Montserrat", sans-serif;
 }
@@ -13,13 +12,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: var(--color-oscuro);
-}
-
-#body__home {
-    background-image: url(../img/back_soad.jpg);
-    background-position: 10% 52px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
 }
 
 h1 {
@@ -37,6 +30,11 @@ h1 {
     display: block;
 }
 
+.wraper {
+    position: relative;
+    z-index: 100;
+}
+
 .header__nav ul li a.active-custom {
     color: var(--color-oscuro);
 }
@@ -49,6 +47,40 @@ h1 {
 .header__nav--footer ul li a.active-custom {
     color: var(--color-terciario);
     font-weight: 600;
+}
+
+#carouselExampleFade {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 0;
+}
+
+.carousel-inner {
+    z-index: -1;
+}
+
+.bg-img-1 {
+    background-image: url(../img/bg-1.jpg);
+}
+
+.bg-img-2 {
+    background-image: url(../img/bg-2.jpg);
+}
+
+.bg-img-3 {
+    background-image: url(../img/bg-3.jpg);
+}
+
+.carousel-image {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* *********************************************** */
@@ -78,6 +110,7 @@ h1 {
     text-align: center;
     margin: 0.2rem;
     border: 2px solid var(--color-oscuro-semi);
+    background-color: var(--color-oscuro);
 }
 
 .header__nav ul li.animate__animated.animate__zoomIn:nth-child(1) {
@@ -136,20 +169,23 @@ h1 {
     background-color: #1b1b1be6;
 }
 
-.shows__fecha.animate__animated.animate__bounceInUp:nth-child(1) {
-    --animate-duration: 3300ms;
+.shows__fecha.animate__animated.animate__flipInX:nth-child(2) {
+    animation-duration: 800ms;
 }
 
-.shows__fecha.animate__animated.animate__bounceInUp:nth-child(2) {
-    --animate-duration: 3000ms;
+.shows__fecha.animate__animated.animate__flipInX:nth-child(3) {
+    animation-duration: 800ms;
+    animation-delay: .5s;
 }
 
-.shows__fecha.animate__animated.animate__bounceInUp:nth-child(3) {
-    --animate-duration: 2700ms;
+.shows__fecha.animate__animated.animate__flipInX:nth-child(4) {
+    animation-duration: 800ms;
+    animation-delay: 1s;
 }
 
-.shows__fecha.animate__animated.animate__bounceInUp:nth-child(4) {
-    --animate-duration: 2400ms;
+.shows__fecha.animate__animated.animate__flipInX:nth-child(5) {
+    animation-duration: 800ms;
+    animation-delay: 1.5s;
 }
 
 .shows__fecha {
@@ -812,9 +848,8 @@ option {
 /* ************************************************ */
 /* Desde 768px */
 @media screen and (min-width: 767.98px) {
-    #body__home {
-        background-image: url(../img/back_soad.jpg);
-        background-position: 16% 212px;
+    #carouselExampleFade {
+        display: block;
     }
 
     #body__contacto {
@@ -861,10 +896,6 @@ option {
 /* ***************************************** */
 /* Desde 992px */
 @media screen and (min-width: 991.98px) {
-    #body__home {
-        background-image: url(../img/back_soad.jpg);
-        background-position: -337px -12px;
-    }
 
     #body__members {
         background-position: 35% -265px;
@@ -892,12 +923,11 @@ option {
 
     .video {
         width: 65%;
-        padding-bottom: 320px;
+        padding-bottom: 333px;
         order: 2;
     }
 
     .footer {
-        width: 100%;
         padding: 15px 0;
     }
 
@@ -1082,10 +1112,6 @@ option {
 /* ***************************************** */
 /* Desde 1200px */
 @media screen and (min-width: 1199.98px) {
-    #body__home {
-        background-position: 35px -85px;
-    }
-
     #body__members {
         background-position: 35% 0;
     }
@@ -1100,14 +1126,6 @@ option {
 
     .wraper {
         height: 100vh;
-    }
-
-    .header {
-        height: 20vh;
-    }
-
-    .footer {
-        height: 16vh;
     }
 
     .footer.footer-int {
@@ -1332,11 +1350,6 @@ option {
 /* ***************************************** */
 /* Desde 1366px */
 @media screen and (min-width: 1365.98px) {
-    #body__home {
-        background-image: url(../img/back_soad_large.jpg);
-        background-position: -60px -30px;
-    }
-
     #body__members {
         background-position: 30% -90px;
     }
@@ -1433,5 +1446,14 @@ option {
 
     .playlist p {
         font-size: .9rem;
+    }
+}
+
+/* ***************************************** */
+/* Desde 1600px */
+@media screen and (min-width: 1599.98px) {
+    .video {
+        padding-bottom: 365px;
+        width: 50%;
     }
 }
