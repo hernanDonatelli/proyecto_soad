@@ -29,6 +29,25 @@
     border: 2px solid $color-oscuro-semi;
     background-color: $color-oscuro;
 
+    a{
+        font-family: $fuente-primaria;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-oscuro-semi;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1.3px;
+        display: inline-block;
+        padding: 0.25rem;
+
+        &:hover {
+            color: $color-oscuro;
+            transition: all 0.4s ease-in-out;
+            font-weight: 600;
+        }
+    }
+
     a.active-custom{
         color: $color-oscuro;
     }
@@ -51,26 +70,9 @@
     &.animate__animated.animate__zoomIn:nth-child(5) {
         animation-duration: 1500ms;
     }
-    a{
-        font-family: $fuente-primaria;
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        text-align: center;
-        color: $color-oscuro-semi;
-        text-decoration: none;
-        font-weight: 600;
-        letter-spacing: 1.3px;
-        display: inline-block;
-        padding: 0.25rem;
-    }
     &:hover{
         border-color: $color-terciario;
         background-color: $color-terciario;
         transition: all 0.4s ease-in-out;
-    }
-    a:hover {
-        color: $color-oscuro;
-        transition: all 0.4s ease-in-out;
-        font-weight: 600;
     }
 }

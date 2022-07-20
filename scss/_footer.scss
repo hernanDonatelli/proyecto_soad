@@ -52,10 +52,10 @@
         font-size: 1rem;
         font-family: $fuente-primaria;
         text-align: center;
-    }
 
-    input[type="email"]::placeholder {
-        color: $color-oscuro;
+        &::placeholder {
+            color: $color-oscuro;
+        }
     }
 
     input[type="button"] {
@@ -66,10 +66,10 @@
         color: $color-oscuro-semi;
         font-size: 1.2rem;
         cursor: pointer;
-    }
 
-    input[type="button"]:hover {
-        color: $color-terciario;
+        &:hover {
+            color: $color-terciario;
+        }
     }
 }
 
