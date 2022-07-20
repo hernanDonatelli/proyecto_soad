@@ -1,0 +1,629 @@
+/* *********MEDIA QUERIS********* */
+
+/* Desde 480px */
+@media screen and (min-width: 479.98px) {
+    .imagen figcaption {
+        opacity: 1;
+    }
+}
+
+/* ************************************************ */
+/* Desde 768px */
+@media screen and (min-width: 767.98px) {
+    #carouselExampleFade {
+        display: block;
+    }
+
+    #body__contacto {
+        background-position: 75px 0;
+    }
+
+    .header__nav {
+
+        ul li a{
+            font-size: 1.2rem;
+        }
+
+        &--footer ul li a {
+            font-size: 1.4rem;
+        }
+    }
+
+    .main {
+        margin-bottom: 2rem;
+    }
+
+    .video {
+        padding-bottom: 390px;
+    }
+
+    .shows h1 {
+        font-family: $fuente-primaria;
+        font-size: 2.3rem;
+    }
+
+    .bio {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .grid_media {
+        .iframe-2,
+        .iframe-1 {
+            max-height: 315px;
+        }
+    }
+
+    .cabecera__apps {
+        justify-content: flex-end;
+        padding-right: 2%;
+    }
+}
+
+/* ***************************************** */
+/* Desde 992px */
+@media screen and (min-width: 991.98px) {
+
+    #body__members {
+        background-position: 35% -265px;
+    }
+
+    #body__disco {
+        background-position: 96% 33px;
+    }
+
+    #body__contacto {
+        background-position: 25px 0;
+    }
+
+    .header__nav {
+        justify-content: flex-end;
+
+        ul li {
+            width: 100%;
+
+            a {
+                font-size: 1.1rem;
+            }
+        }
+
+        &--footer ul {
+            margin-bottom: 0;
+
+            li a {
+                letter-spacing: 0.15rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .video {
+        width: 65%;
+        padding-bottom: 333px;
+        order: 2;
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+
+
+    .titleSection {
+        flex-direction: row;
+        align-items: center;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .grid_media {
+        width: 100%;
+        row-gap: 0.8rem;
+        column-gap: 0.8rem;
+
+        .iframe-1 {
+            grid-column: 1/3;
+            grid-row: 1/4;
+        }
+
+        .iframe-2 {
+            grid-column: 2/4;
+            grid-row: 7/8;
+            max-height: 290px;
+        }
+
+        .imagen-9 {
+            max-height: 100%;
+            grid-row: 5/7;
+        }
+
+        .imagen-17 {
+            max-height: 100%;
+            grid-column: 1/2;
+            grid-row: 7/9;
+        }
+    }
+
+    .imagen-1 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .imagen-2 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .imagen-3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .imagen-4 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .imagen-5 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .imagen-6 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .imagen-7 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .imagen-8 {
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+
+    .imagen-12 {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .imagen-11 {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .imagen-13 {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .imagen-14 {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+    .imagen-15 {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    .imagen-21 {
+        grid-column: 2/3;
+        grid-row: 8/9;
+    }
+
+    .imagen-18 {
+        grid-column: 3/4;
+        grid-row: 8/9;
+    }
+
+    .imagen-20 {
+        grid-column: 3/4;
+        grid-row: 9/10;
+    }
+
+    .imagen-19 {
+        grid-column: 1/3;
+    }
+
+    .namers__name h3 {
+        font-size: 1.4rem;
+    }
+
+    .contenedor__discografia {
+        max-width: 95%;
+        grid-template-rows: 10% auto 13%;
+    }
+
+    .bio p {
+        padding: 10px 50px;
+    }
+
+    .playlist p {
+        font-size: 1rem;
+    }
+
+    .main-cont {
+        position: relative;
+
+        form {
+            position: relative;
+            right: 0;
+            width: 55%;
+
+            .personales,
+            .newsletter,
+            .favdisc,
+            .country,
+            .mensaje,
+            .send {
+                width: 95%;
+                margin-top: 2rem;
+            }
+
+            .personales input[type="text"],
+            .personales input[type="number"],
+            .personales input[type="email"] {
+                width: 100%;
+            }
+
+            .send input[type="button"] {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* ***************************************** */
+/* Desde 1200px */
+@media screen and (min-width: 1199.98px) {
+    #body__members {
+        background-position: 35% 0;
+    }
+
+    #body__disco {
+        background-position: 96% 33px;
+    }
+
+    #body__contacto {
+        background-position: 215px 0;
+    }
+
+    .wraper {
+        height: 100vh;
+    }
+
+    .footer.footer-int {
+        height: auto;
+        flex-direction: row;
+    }
+
+    .main {
+        height: 63vh;
+    }
+
+    .header__nav ul {
+        justify-content: flex-end;
+    }
+
+    .shows {
+        position: relative;
+        width: 100%;
+        display: flex;
+        order: 2;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+        h1 {
+            position: absolute;
+            top: -35%;
+        }
+
+        &__fecha {
+            width: 100%;
+            margin: 0 5px;
+            padding: 5px 10px;
+        }
+    }
+
+    .video {
+        order: 1;
+        width: 51%;
+        padding-bottom: 315px;
+    }
+
+    .bio {
+        max-width: 100%;
+    }
+
+    .rrsuscripcion {
+        width: 50%;
+    }
+
+    .grid_media {
+        grid-template-columns: repeat(4, 1fr);
+
+        .imagen-3 {
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+
+        .imagen-4 {
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+
+        .imagen-6 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .imagen-7 {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+
+        .imagen-8 {
+            grid-column: 4/5;
+            grid-row: 3/4;
+        }
+
+        .imagen-12 {
+            grid-row: 4/5;
+        }
+
+        .imagen-13 {
+            grid-row: 4/5;
+        }
+
+        .imagen-11 {
+            grid-column: 3/4;
+            grid-row: 4/5;
+        }
+
+        .imagen-10 {
+            grid-row: 5/6;
+        }
+
+        .imagen-14 {
+            grid-row: 5/6;
+        }
+
+        .imagen-15 {
+            grid-column: 3/4;
+            grid-row: 5/6;
+        }
+
+        .imagen-16 {
+            grid-row: 7/8;
+        }
+
+        .imagen-21 {
+            grid-row: 7/8;
+        }
+
+        .imagen-18 {
+            grid-row: 7/8;
+        }
+
+        .imagen-20 {
+            grid-column: 4/5;
+            grid-row: 7/8;
+        }
+
+        .imagen-9 {
+            grid-column: 4/5;
+            grid-row: 4/6;
+        }
+
+        .imagen-17 {
+            grid-row: 5/7;
+        }
+
+        .imagen-19 {
+            max-height: 100%;
+            grid-column: 4/5;
+            grid-row: 6/7;
+        }
+
+        .iframe-2 {
+            grid-column: 2/4;
+            grid-row: 6/7;
+        }
+    }
+
+    .titleSection h1 {
+        font-size: 3rem;
+    }
+
+    .card__{
+        &namersbio.par .namers {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            .namers__name {
+                order: 2;
+
+                h3 {
+                    padding-right: 15px;
+                }
+            }
+        }
+
+        &namersbio.par .bio p {
+            text-align: right;
+        }
+
+        &img {
+            max-width: 25%;
+
+            img {
+                margin: 0 auto;
+                max-width: 80%;
+            }
+        }
+
+        &img.par {
+            order: 2;
+        }
+
+        &namersbio {
+            width: 75%;
+
+            .namers {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: flex-start;
+
+                &__name h3,
+                &__rs {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    text-align: left;
+                    padding-left: 15px;
+                    font-size: 1.8rem;
+                }
+
+                &__name h3 span{
+                    font-size: 1.5rem;
+                }
+            }
+
+            .bio p {
+                font-size: 1.2rem;
+                padding: 10px 15px;
+            }
+        }
+    }
+
+    .contenedor__discografia {
+        max-width: 1140px;
+        grid-template-rows: 14% auto 20%;
+    }
+
+    .suscripcion input[type="button"] {
+        margin-left: 10px;
+        padding-top: 0;
+    }
+}
+
+/* ***************************************** */
+/* Desde 1366px */
+@media screen and (min-width: 1365.98px) {
+    #body__members {
+        background-position: 30% -90px;
+    }
+
+    #body__disco {
+        background-position: 120% 33px;
+    }
+
+    #body__contacto {
+        background-position: 275px 0;
+    }
+
+    .wraper {
+        height: 100vh;
+    }
+
+    .footer {
+        height: auto;
+        align-items: center;
+
+        &.footer_media .suscripcion {
+            width: 52%;
+        }
+    }
+
+    .header {
+        height: 15vh;
+
+        &__nav ul li a {
+            font-size: 1rem;
+        }
+
+        &__logo a img {
+            width: 45%;
+        }
+    }
+
+    .main {
+        height: 70vh;
+        width: 100%;
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+
+    .video {
+        order: 1;
+        padding-bottom: 277px;
+        width: 45%;
+    }
+
+    .shows{
+        h1 {
+            position: absolute;
+            top: -45%;
+            left: 1%;
+            text-align: left;
+        }
+
+        &__fecha {
+            margin-left: 1%;
+            padding: .25rem;
+
+            p {
+                font-size: .9rem;
+
+                &.estadio {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    .grid_media {
+        gap: 15px;
+
+        .iframe-1,
+        .iframe-2 {
+            max-height: 100%;
+        }
+    }
+
+    .namers{
+        &__name{
+            h3{
+               font-size: 1.8rem;
+               span {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .cardiscografia {
+        min-height: 22rem;
+    }
+
+    .playlist p {
+        font-size: .9rem;
+    }
+}
+
+/* ***************************************** */
+/* Desde 1600px */
+@media screen and (min-width: 1599.98px) {
+    .img-cabecera{
+        width: 150px;
+    }
+    .video {
+        padding-bottom: 365px;
+        width: 50%;
+    }
+}

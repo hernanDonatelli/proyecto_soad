@@ -1,0 +1,81 @@
+/* Footer */
+.header__nav--footer ul li {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+
+    a{
+        font-family: $fuente-primaria;
+        font-size: 1.3rem;
+        color: $color-oscuro-semi;
+        text-decoration: none;
+        letter-spacing: 0.15rem;
+        font-weight: 400;
+
+        &:hover{
+            color: $color-terciario;
+        }
+    }
+
+    a.active-custom{
+        color: $color-terciario;
+        font-weight: 600;}
+}
+
+.iconify {
+    color: $color-oscuro-semi;
+    width: 1.4rem;
+    height: auto;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-terciario;
+        transition: all .4s ease-in-out;
+    }
+}
+
+.suscripcion{
+    p{
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-family: $fuente-primaria;
+        color: $color-oscuro-semi;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    input[type="email"] {
+        background-color: $color-terciario;
+        border: none;
+        padding: 10px;
+        font-size: 1rem;
+        font-family: $fuente-primaria;
+        text-align: center;
+    }
+
+    input[type="email"]::placeholder {
+        color: $color-oscuro;
+    }
+
+    input[type="button"] {
+        border: none;
+        padding: 1rem 0 0 0;
+        background-color: transparent;
+        font-family: $fuente-primaria;
+        color: $color-oscuro-semi;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+        color: $color-terciario;
+    }
+}
+
+#footer-cont .header__nav--footer,
+#footer-mult .header__nav--footer,
+#footer-disc .header__nav--footer,
+#footer-int .header__nav--footer {
+    display: block;
+}
