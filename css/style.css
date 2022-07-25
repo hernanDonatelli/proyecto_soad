@@ -13,6 +13,16 @@ h1 {
   font-weight: 700;
   margin-bottom: 20px; }
 
+/* Defino una clase para luego incluirla mediante "@extend" */
+/* Home, tarjetas de tickets en shows */
+.shows_flex, .shows__fecha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/* MIXIN definiendo Flex */
+/* Discografia, tarjetas de los discos*/
+/*Layout*/
 /* Header */
 .navbar-toggler.burguer {
   color: #c0b283;
@@ -68,121 +78,6 @@ h1 {
     border-color: #c0b283;
     background-color: #c0b283;
     transition: all 0.4s ease-in-out; }
-
-/* HOME */
-/* Carrousel de Fondo Home*/
-.wraper {
-  position: relative;
-  z-index: 100; }
-
-#carouselExampleFade {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  z-index: 0; }
-
-.carousel-inner {
-  z-index: -1; }
-
-.bg-img-1 {
-  background-image: url(../img/bg-1.jpg); }
-
-.bg-img-2 {
-  background-image: url(../img/bg-2.jpg); }
-
-.bg-img-3 {
-  background-image: url(../img/bg-3.jpg); }
-
-.carousel-image {
-  height: 100vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-/* ************************************************* */
-/* Main */
-.shows__fecha.animate__animated.animate__flipInX:nth-child(2) {
-  animation-duration: 800ms; }
-
-.shows__fecha.animate__animated.animate__flipInX:nth-child(3) {
-  animation-duration: 800ms;
-  animation-delay: .5s; }
-
-.shows__fecha.animate__animated.animate__flipInX:nth-child(4) {
-  animation-duration: 800ms;
-  animation-delay: 1s; }
-
-.shows__fecha.animate__animated.animate__flipInX:nth-child(5) {
-  animation-duration: 800ms;
-  animation-delay: 1.5s; }
-
-.shows h1 {
-  text-align: center;
-  font-size: 2rem;
-  color: #c0b283;
-  background-color: #1b1b1be6; }
-
-.shows__fecha {
-  background-color: #1b1b1b;
-  border: 2px solid #c0b283;
-  padding: 10px;
-  margin-top: -10px;
-  margin-bottom: 15px; }
-  .shows__fecha p {
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #888888;
-    margin: 0;
-    background-color: #1b1b1b; }
-    .shows__fecha p.estadio {
-      font-weight: 600;
-      text-transform: uppercase;
-      font-style: normal;
-      color: #c0b283;
-      font-size: 1.3rem;
-      text-align: center; }
-
-.btn-ticket {
-  border: 2px solid #c0b283;
-  background-color: #c0b283;
-  color: #1b1b1b;
-  font-family: "Zilla Slab", serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  margin-top: 10px;
-  text-transform: uppercase; }
-  .btn-ticket:hover {
-    background-color: #1b1b1b;
-    border: 2px solid #c0b283;
-    color: #c0b283;
-    transition: all .4s ease-in-out; }
-
-.video {
-  overflow: hidden;
-  padding-bottom: 291px;
-  position: relative;
-  height: 0;
-  width: 100%;
-  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.75); }
-  .video iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    border: none; }
 
 /* Footer */
 .header__nav--footer ul li {
@@ -247,7 +142,116 @@ h1 {
 #footer-int .header__nav--footer {
   display: block; }
 
-/* Estilos de paginas internas */
+/* Estilos de paginas */
+/* HOME */
+/* Carrousel de Fondo Home*/
+.wraper {
+  position: relative;
+  z-index: 100; }
+
+#carouselExampleFade {
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 0; }
+
+.carousel-inner {
+  z-index: -1; }
+
+.bg-img-1 {
+  background-image: url(../img/bg-1.jpg); }
+
+.bg-img-2 {
+  background-image: url(../img/bg-2.jpg); }
+
+.bg-img-3 {
+  background-image: url(../img/bg-3.jpg); }
+
+.carousel-image {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* ************************************************* */
+/* Main */
+.shows__fecha {
+  background-color: #1b1b1b;
+  border: 2px solid #c0b283;
+  padding: 10px;
+  margin-top: -10px;
+  margin-bottom: 15px; }
+  .shows__fecha p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #888888;
+    margin: 0;
+    background-color: #1b1b1b; }
+    .shows__fecha p.estadio {
+      font-weight: 600;
+      text-transform: uppercase;
+      font-style: normal;
+      color: #c0b283;
+      font-size: 1.3rem;
+      text-align: center; }
+  .shows__fecha.animate__animated.animate__flipInX:nth-child(2) {
+    animation-duration: 800ms; }
+  .shows__fecha.animate__animated.animate__flipInX:nth-child(3) {
+    animation-duration: 800ms;
+    animation-delay: .5s; }
+  .shows__fecha.animate__animated.animate__flipInX:nth-child(4) {
+    animation-duration: 800ms;
+    animation-delay: 1s; }
+  .shows__fecha.animate__animated.animate__flipInX:nth-child(5) {
+    animation-duration: 800ms;
+    animation-delay: 1.5s; }
+
+.shows h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #c0b283;
+  background-color: #1b1b1be6; }
+
+.btn-ticket {
+  border: 2px solid #c0b283;
+  background-color: #c0b283;
+  color: #1b1b1b;
+  font-family: "Zilla Slab", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase; }
+  .btn-ticket:hover {
+    background-color: #1b1b1b;
+    border: 2px solid #c0b283;
+    color: #c0b283;
+    transition: all .4s ease-in-out; }
+
+.video {
+  overflow: hidden;
+  padding-bottom: 291px;
+  position: relative;
+  height: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.75); }
+  .video iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: none; }
+
 /* MULTIMEDIA */
 #body__multimedia {
   background-image: url(../img/back_soad_multimedia.jpg);
@@ -486,7 +490,11 @@ figcaption {
     background-image: url(../img/soaddisc5.jpg); }
 
 .cardiscografia {
-  height: 350px; }
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: unset; }
   .cardiscografia::before {
     content: ' ';
     display: block;
@@ -498,44 +506,51 @@ figcaption {
     height: 100%;
     z-index: 1;
     opacity: 0.8; }
-
-.cabecera__apps {
-  z-index: 10; }
-  .cabecera__apps .iconify {
-    width: 1.8rem;
+  .cardiscografia .cabecera {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .cardiscografia .cabecera__apps {
+      z-index: 10; }
+      .cardiscografia .cabecera__apps .iconify {
+        width: 1.8rem;
+        color: #c0b283;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem; }
+        .cardiscografia .cabecera__apps .iconify:hover {
+          color: #dcd0d0; }
+    .cardiscografia .cabecera__album {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: flex-start; }
+      .cardiscografia .cabecera__album h2 {
+        position: relative;
+        text-transform: uppercase;
+        font-family: "Zilla Slab", serif;
+        color: #c0b283;
+        font-size: 1.3rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0;
+        padding-right: 0.5rem;
+        z-index: 10; }
+      .cardiscografia .cabecera__album h3 {
+        position: relative;
+        font-family: "Zilla Slab", serif;
+        color: #888888;
+        font-size: 1.4rem;
+        z-index: 10; }
+  .cardiscografia .playlist p {
     color: #c0b283;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem; }
-    .cabecera__apps .iconify:hover {
-      color: #dcd0d0; }
-
-.cabecera__album h2 {
-  position: relative;
-  text-transform: uppercase;
-  font-family: "Zilla Slab", serif;
-  color: #c0b283;
-  font-size: 1.3rem;
-  margin-top: 0.25rem;
-  margin-bottom: 0;
-  padding-right: 0.5rem;
-  z-index: 10; }
-
-.cabecera__album h3 {
-  position: relative;
-  font-family: "Zilla Slab", serif;
-  color: #888888;
-  font-size: 1.4rem;
-  z-index: 10; }
-
-.playlist p {
-  color: #c0b283;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  padding: 10px 10px 5px 10px;
-  z-index: 10;
-  position: relative;
-  margin-bottom: 0;
-  text-align: left; }
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding: 10px 10px 5px 10px;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 0;
+    text-align: left; }
 
 /* CONTACTO */
 #body__contacto {
@@ -625,7 +640,7 @@ figcaption {
     color: #1b1b1b;
     transition: all .4s ease-in-out; }
 
-/* Mediaqueris*/
+/* Mediaqueris */
 /* *********MEDIA QUERIS********* */
 /* Desde 480px */
 @media screen and (min-width: 479.98px) {
@@ -663,6 +678,9 @@ figcaption {
 /* ***************************************** */
 /* Desde 992px */
 @media screen and (min-width: 991.98px) {
+  #carouselExampleFade {
+    top: 0;
+    height: 100vh; }
   #body__members {
     background-position: 35% -265px; }
   #body__disco {

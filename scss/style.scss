@@ -1,13 +1,16 @@
-@import "globales";
-@import "header";
-@import "home";
-@import "footer";
+@import "./utilities/globales";
+@import "./utilities/operator";
 
-/* Estilos de paginas internas */
-@import "multimedia";
-@import "integrantes";
-@import "discografia";
-@import "contacto";
+/*Layout*/
+@import "./layout/header";
+@import "./layout/footer";
 
-/* Mediaqueris*/
-@import "queris";
+/* Estilos de paginas */
+@import "./views/home";
+@import "./views/multimedia";
+@import "./views/integrantes";
+@import "./views/discografia";
+@import "./views/contacto";
+
+/* Mediaqueris */
+@import "./utilities/queris";
