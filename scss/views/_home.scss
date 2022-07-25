@@ -13,7 +13,13 @@
     left: 0;
     z-index: 0;
 }
-
+.carousel-image {
+    width: 90%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .carousel-inner {
     z-index: -1;
 }
@@ -28,14 +34,6 @@
 
 .bg-img-3 {
     background-image: url(../img/bg-3.jpg);
-}
-
-.carousel-image {
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 /* ************************************************* */
 
