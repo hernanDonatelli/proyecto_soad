@@ -1,0 +1,114 @@
+/* CONTACTO */
+#body__contacto {
+    background-image: url(../img/back_soad_contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-cont {
+    padding-bottom: 2rem;
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    form {
+        color: $color-oscuro-semi;
+        font-family: $fuente-primaria;
+        font-size: 1.1rem;
+
+        .personales {
+            width: 80%;
+            margin: 0 auto;
+
+            label {
+                display: none;
+            }
+
+            input[type="text"],
+            input[type="number"],
+            input[type="email"],
+            option{
+                font-family: $fuente-primaria;
+                font-size: 1.1rem;
+                background-color: transparent;
+                color: $color-terciario;
+                border: none;
+                border-bottom: 1px solid $color-oscuro-semi;
+                padding: 1rem 0 .3rem;
+            }
+        }
+
+        .newsletter,
+        .favdisc,
+        .country,
+        .mensaje,
+        .send {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.newsletter label {
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    padding-bottom: 0.25rem;
+}
+
+.favdisc p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    padding-bottom: 0.25rem;
+}
+
+.country {
+    select{
+        background-color: $color-oscuro;
+        color: $color-oscuro-semi;
+        padding: 0.25rem;
+        font-size: .9rem;
+    }
+
+    option {
+        background-color: $color-oscuro;
+        color: $color-oscuro-semi;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+}
+
+.mensaje textarea {
+    width: 100%;
+    background-color: transparent;
+    font-family: $fuente-primaria;
+    font-size: 1.1rem;
+    color: $color-terciario;
+    border-radius: 5px;
+}
+
+.send {
+    margin-bottom: 2rem;
+
+    input[type="button"] {
+        width: 100%;
+        color: $color-terciario;
+        font-family: $fuente-primaria;
+        font-size: 1.2rem;
+        padding: 6px 12px;
+        background-color: transparent;
+        border: 1px solid $color-terciario;
+        cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+        background-color: $color-terciario;
+        border: 1px solid $color-oscuro;
+        color: $color-oscuro;
+        transition: all .4s ease-in-out;
+    }
+}

@@ -69,70 +69,7 @@ h1 {
     background-color: #c0b283;
     transition: all 0.4s ease-in-out; }
 
-/* Footer */
-.header__nav--footer ul li {
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem; }
-  .header__nav--footer ul li a {
-    font-family: "Zilla Slab", serif;
-    font-size: 1.3rem;
-    color: #888888;
-    text-decoration: none;
-    letter-spacing: 0.15rem;
-    font-weight: 400; }
-    .header__nav--footer ul li a:hover {
-      color: #c0b283; }
-  .header__nav--footer ul li a.active-custom {
-    color: #c0b283;
-    font-weight: 600; }
-
-.iconify {
-  color: #888888;
-  width: 1.4rem;
-  height: auto;
-  cursor: pointer; }
-  .iconify:hover {
-    color: #c0b283;
-    transition: all .4s ease-in-out; }
-
-.suscripcion p {
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-family: "Zilla Slab", serif;
-  color: #888888;
-  font-size: 1.1rem;
-  text-align: center; }
-
-.suscripcion input[type="email"] {
-  background-color: #c0b283;
-  border: none;
-  padding: 10px;
-  font-size: 1rem;
-  font-family: "Zilla Slab", serif;
-  text-align: center; }
-  .suscripcion input[type="email"]::placeholder {
-    color: #1b1b1b; }
-
-.suscripcion input[type="button"] {
-  border: none;
-  padding: 1rem 0 0 0;
-  background-color: transparent;
-  font-family: "Zilla Slab", serif;
-  color: #888888;
-  font-size: 1.2rem;
-  cursor: pointer; }
-  .suscripcion input[type="button"]:hover {
-    color: #c0b283; }
-
-#footer-cont .header__nav--footer,
-#footer-mult .header__nav--footer,
-#footer-disc .header__nav--footer,
-#footer-int .header__nav--footer {
-  display: block; }
-
-/* *********************************************** */
+/* HOME */
 /* Carrousel de Fondo Home*/
 .wraper {
   position: relative;
@@ -247,7 +184,69 @@ h1 {
     position: absolute;
     border: none; }
 
-/* ********************************************** */
+/* Footer */
+.header__nav--footer ul li {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem; }
+  .header__nav--footer ul li a {
+    font-family: "Zilla Slab", serif;
+    font-size: 1.3rem;
+    color: #888888;
+    text-decoration: none;
+    letter-spacing: 0.15rem;
+    font-weight: 400; }
+    .header__nav--footer ul li a:hover {
+      color: #c0b283; }
+  .header__nav--footer ul li a.active-custom {
+    color: #c0b283;
+    font-weight: 600; }
+
+.iconify {
+  color: #888888;
+  width: 1.4rem;
+  height: auto;
+  cursor: pointer; }
+  .iconify:hover {
+    color: #c0b283;
+    transition: all .4s ease-in-out; }
+
+.suscripcion p {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: "Zilla Slab", serif;
+  color: #888888;
+  font-size: 1.1rem;
+  text-align: center; }
+
+.suscripcion input[type="email"] {
+  background-color: #c0b283;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: "Zilla Slab", serif;
+  text-align: center; }
+  .suscripcion input[type="email"]::placeholder {
+    color: #1b1b1b; }
+
+.suscripcion input[type="button"] {
+  border: none;
+  padding: 1rem 0 0 0;
+  background-color: transparent;
+  font-family: "Zilla Slab", serif;
+  color: #888888;
+  font-size: 1.2rem;
+  cursor: pointer; }
+  .suscripcion input[type="button"]:hover {
+    color: #c0b283; }
+
+#footer-cont .header__nav--footer,
+#footer-mult .header__nav--footer,
+#footer-disc .header__nav--footer,
+#footer-int .header__nav--footer {
+  display: block; }
+
 /* Estilos de paginas internas */
 /* MULTIMEDIA */
 #body__multimedia {
@@ -277,7 +276,7 @@ h1 {
     font-size: 2.5rem;
     text-transform: uppercase;
     margin: 20px 0 0; }
-  .titleSection h3 {
+  .titleSection h2 {
     font-size: 2rem;
     font-family: "Zilla Slab", serif;
     font-weight: 300;
@@ -413,8 +412,6 @@ figcaption {
   letter-spacing: 1px;
   opacity: 0; }
 
-/* ********************************************** */
-/* Estilos de paginas internas */
 /* INTEGRANTES */
 #body__members {
   background-image: url(../img/back_soad_members.jpg);
@@ -431,7 +428,7 @@ figcaption {
   -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.75); }
 
-.namers__name h3 {
+.namers__name h2 {
   font-family: "Zilla Slab", serif;
   color: #c0b283;
   font-size: 1.2rem;
@@ -440,7 +437,7 @@ figcaption {
   margin: 10px auto;
   letter-spacing: 0.15rem;
   text-transform: uppercase; }
-  .namers__name h3 span {
+  .namers__name h2 span {
     font-weight: 100;
     color: #888888;
     font-style: italic;
@@ -462,8 +459,6 @@ figcaption {
   padding: 10px 15px;
   margin: 0; }
 
-/* ********************************************** */
-/* Estilos de paginas internas */
 /* DISCOGRAFIA */
 #body__disco {
   background-image: url(../img/back_soad_shows.jpg);
@@ -514,7 +509,7 @@ figcaption {
     .cabecera__apps .iconify:hover {
       color: #dcd0d0; }
 
-.cabecera__album h3 {
+.cabecera__album h2 {
   position: relative;
   text-transform: uppercase;
   font-family: "Zilla Slab", serif;
@@ -525,7 +520,7 @@ figcaption {
   padding-right: 0.5rem;
   z-index: 10; }
 
-.cabecera__album h5 {
+.cabecera__album h3 {
   position: relative;
   font-family: "Zilla Slab", serif;
   color: #888888;
@@ -542,8 +537,6 @@ figcaption {
   margin-bottom: 0;
   text-align: left; }
 
-/* ********************************************** */
-/* Estilos de paginas internas */
 /* CONTACTO */
 #body__contacto {
   background-image: url(../img/back_soad_contact.jpg);
@@ -632,7 +625,7 @@ figcaption {
     color: #1b1b1b;
     transition: all .4s ease-in-out; }
 
-/* ************************************************ */
+/* Mediaqueris*/
 /* *********MEDIA QUERIS********* */
 /* Desde 480px */
 @media screen and (min-width: 479.98px) {
@@ -896,7 +889,7 @@ figcaption {
     width: 100%; }
     .card__namersbio.par .namers .namers__name {
       order: 2; }
-      .card__namersbio.par .namers .namers__name h3 {
+      .card__namersbio.par .namers .namers__name h2 {
         padding-right: 15px; }
   .card__namersbio.par .bio p {
     text-align: right; }
@@ -914,14 +907,14 @@ figcaption {
       align-items: center;
       width: 100%;
       justify-content: flex-start; }
-      .card__namersbio .namers__name h3, .card__namersbio .namers__rs {
+      .card__namersbio .namers__name h2, .card__namersbio .namers__rs {
         margin-top: 0;
         margin-bottom: 0;
         text-align: left;
         padding-left: 15px;
-        font-size: 1.8rem; }
-      .card__namersbio .namers__name h3 span {
-        font-size: 1.5rem; }
+        font-size: 1.3rem; }
+      .card__namersbio .namers__name h2 span {
+        font-size: 1.3rem; }
     .card__namersbio .bio p {
       font-size: 1.2rem;
       padding: 10px 15px; }

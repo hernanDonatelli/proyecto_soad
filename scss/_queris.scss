@@ -448,7 +448,7 @@
             .namers__name {
                 order: 2;
 
-                h3 {
+                h2 {
                     padding-right: 15px;
                 }
             }
@@ -480,17 +480,17 @@
                 width: 100%;
                 justify-content: flex-start;
 
-                &__name h3,
+                &__name h2,
                 &__rs {
                     margin-top: 0;
                     margin-bottom: 0;
                     text-align: left;
                     padding-left: 15px;
-                    font-size: 1.8rem;
+                    font-size: 1.3rem;
                 }
 
-                &__name h3 span{
-                    font-size: 1.5rem;
+                &__name h2 span{
+                    font-size: 1.3rem;
                 }
             }
 
