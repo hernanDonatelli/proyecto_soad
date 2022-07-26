@@ -6,6 +6,14 @@
     background-size: cover;
 }
 
+.main-integrantes .history{
+    p{
+        font-family: $fuente-primaria;
+        color: $color-oscuro-semi;
+        font-size: 1.2rem;
+    }
+}
+
 .card__img img {
     max-width: 70%;
     height: auto;

@@ -149,12 +149,20 @@ h1 {
   position: relative;
   z-index: 100; }
 
+#body__home {
+  background-image: url(../../img/bg-2.jpg);
+  background-position: -430px -250px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 #carouselExampleFade {
   width: 100vw;
+  height: 100vh;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
-  z-index: 0; }
+  z-index: 0;
+  display: none; }
 
 .carousel-image {
   width: 90%;
@@ -423,6 +431,11 @@ figcaption {
   background-position: 42% -265px;
   background-size: cover; }
 
+.main-integrantes .history p {
+  font-family: "Zilla Slab", serif;
+  color: #888888;
+  font-size: 1.2rem; }
+
 .card__img img {
   max-width: 70%;
   height: auto;
@@ -650,8 +663,6 @@ figcaption {
 /* ************************************************ */
 /* Desde 768px */
 @media screen and (min-width: 767.98px) {
-  #carouselExampleFade {
-    display: block; }
   #body__contacto {
     background-position: 75px 0; }
   .header__nav ul li a {
@@ -678,9 +689,8 @@ figcaption {
 /* ***************************************** */
 /* Desde 992px */
 @media screen and (min-width: 991.98px) {
-  #carouselExampleFade {
-    top: 0;
-    height: 100vh; }
+  #body__home {
+    background-position: -570px 27px; }
   #body__members {
     background-position: 35% -265px; }
   #body__disco {
@@ -709,6 +719,12 @@ figcaption {
     align-items: center; }
     .titleSection h1 {
       margin-bottom: 20px; }
+  .main-integrantes .titleSection {
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto; }
+  .history p {
+    padding: 10px 50px; }
   .grid_media {
     width: 100%;
     row-gap: 0.8rem;
@@ -810,6 +826,10 @@ figcaption {
 /* ***************************************** */
 /* Desde 1200px */
 @media screen and (min-width: 1199.98px) {
+  #body__home {
+    background-image: none; }
+  #carouselExampleFade {
+    display: block; }
   #body__members {
     background-position: 35% 0; }
   #body__disco {
@@ -843,6 +863,12 @@ figcaption {
     order: 1;
     width: 51%;
     padding-bottom: 315px; }
+  .main-integrantes .titleSection {
+    align-items: flex-start;
+    margin: 0;
+    max-width: 100%; }
+  .history p {
+    padding: 0 30px; }
   .bio {
     max-width: 100%; }
   .rrsuscripcion {
