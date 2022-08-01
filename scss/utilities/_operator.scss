@@ -1,5 +1,4 @@
 /* Defino una clase para luego incluirla mediante "@extend" */
-/* Home, tarjetas de tickets en shows */
 .shows_flex{
     display: flex;
     flex-direction: column;
@@ -7,7 +6,6 @@
 }
 
 /* MIXIN definiendo Flex */
-/* Discografia, tarjetas de los discos*/
 @mixin card-flex ($display, $direction, $justify, $align){
     display: $display;
     flex-direction: $direction;
