@@ -58,10 +58,21 @@
     padding-bottom: 0.25rem;
 }
 
-.favdisc p {
+.favdisc{
+    p{
     font-size: 1.2rem;
     margin-bottom: 0;
     padding-bottom: 0.25rem;
+    }
+    &__list{
+        list-style-type: none;
+        padding-left: 0;
+
+        & li span{
+            padding-left: 0.75rem;
+        }
+    }
+
 }
 
 .country {

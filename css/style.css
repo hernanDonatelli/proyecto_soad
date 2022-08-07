@@ -432,7 +432,14 @@ figcaption {
 .main-integrantes .history p {
   font-family: "Zilla Slab", serif;
   color: #888888;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  padding: 10px 15px; }
+  .main-integrantes .history p a {
+    color: #dcd0d0;
+    font-weight: 600; }
+    .main-integrantes .history p a:hover {
+      color: #c0b283;
+      transition: all .4s ease-in-out; }
 
 .card__img img {
   max-width: 70%;
@@ -473,6 +480,21 @@ figcaption {
   font-size: 1.2rem;
   padding: 10px 15px;
   margin: 0; }
+
+.back_fixed {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url(../img/soad_band_fixed.jpg);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  .back_fixed .titleSection h1 {
+    font-size: 3rem;
+    color: #dcd0d0;
+    margin-top: 0; }
 
 /* DISCOGRAFIA */
 #body__disco {
@@ -613,6 +635,12 @@ figcaption {
   margin-bottom: 0;
   padding-bottom: 0.25rem; }
 
+.favdisc__list {
+  list-style-type: none;
+  padding-left: 0; }
+  .favdisc__list li span {
+    padding-left: 0.75rem; }
+
 .country select {
   background-color: #1b1b1b;
   color: #888888;
@@ -719,6 +747,7 @@ figcaption {
       margin-bottom: 20px; }
   .main-integrantes .titleSection {
     flex-direction: column;
+    align-items: flex-start;
     max-width: 90%;
     margin: 0 auto; }
   .history p {
