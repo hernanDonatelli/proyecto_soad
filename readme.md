@@ -1,6 +1,6 @@
 <h1>Proyecto System Of A Down</h1>
 <p>
-    Proyecto personal de desarrollo web para una banda musical.
+    Proyecto personal de desarrollo web para una banda musical. Incluye Full Responsive, adaptado para mobile, tablet y desktop.
 </p>
 
 <h2>Screenshots</h2>
