@@ -5,7 +5,7 @@
 
 <h2>Screenshots</h2>
 <img src="https://proyecto-soad.000webhostapp.com/img/screen1366.jpg">
-<img src="https://proyecto-soad.000webhostapp.com/img/screen1.png">
+<img src="https://proyecto-soad.000webhostapp.com/img/screen1.png" heigth="730" width="360">
 <img src="https://proyecto-soad.000webhostapp.com/img/screen6.png">
 <img src="https://proyecto-soad.000webhostapp.com/img/screen2.png">
 <img src="https://proyecto-soad.000webhostapp.com/img/screen3.png">
