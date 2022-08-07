@@ -5,11 +5,11 @@
 
 <h2>Screenshots</h2>
 <hr>
-<img src="https://proyecto-soad.000webhostapp.com/img/screen1366.jpg">
-<img src="https://proyecto-soad.000webhostapp.com/img/screen1.png" heigth="730" width="360">
-<img src="https://proyecto-soad.000webhostapp.com/img/screen6.png" heigth="730" width="360">
-<img src="https://proyecto-soad.000webhostapp.com/img/screen3.png" heigth="730" width="360">
-<img src="https://proyecto-soad.000webhostapp.com/img/screen4.png" heigth="730" width="360">
+<span><img src="https://proyecto-soad.000webhostapp.com/img/screen1366.jpg"></span>
+<span><img src="https://proyecto-soad.000webhostapp.com/img/screen1.png" heigth="730" width="360"></span>
+<span><img src="https://proyecto-soad.000webhostapp.com/img/screen6.png" heigth="730" width="360"></span>
+<span><img src="https://proyecto-soad.000webhostapp.com/img/screen3.png" heigth="730" width="360"></span>
+<span><img src="https://proyecto-soad.000webhostapp.com/img/screen4.png" heigth="730" width="360"></span>
 
 <h2>Estructura de la Web</h2>
 <hr>
